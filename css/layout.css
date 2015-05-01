@@ -28,8 +28,54 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'RL';
+    src: url('../fonts/roboto-light-webfont.eot');
+    src: url('../fonts/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-light-webfont.woff') format('woff'),
+         url('../fonts/roboto-light-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
+@font-face {
+    font-family: 'RLI';
+    src: url('../fonts/roboto-lightitalic-webfont.eot');
+    src: url('../fonts/roboto-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-lightitalic-webfont.woff') format('woff'),
+         url('../fonts/roboto-lightitalic-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-lightitalic-webfont.svg#robotolight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
+@font-face {
+    font-family: 'RR';
+    src: url('../fonts/roboto-regular-webfont.eot');
+    src: url('../fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-regular-webfont.woff') format('woff'),
+         url('../fonts/roboto-regular-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'RB';
+    src: url('../fonts/roboto-bold-webfont.eot');
+    src: url('../fonts/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-bold-webfont.woff') format('woff'),
+         url('../fonts/roboto-bold-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 html,
 body {
 	position: relative;
@@ -111,19 +157,199 @@ input::-webkit-input-placeholder {
 input:-moz-placeholder {
 	color: #434343;
 }
-.b-orange-butt{
-
+.b-blue-butt{
+	background: rgb(88,177,238); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(88,177,238,1) 0%, rgba(37,125,186,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(88,177,238,1)), color-stop(100%,rgba(37,125,186,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(88,177,238,1) 0%,rgba(37,125,186,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(88,177,238,1) 0%,rgba(37,125,186,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(88,177,238,1) 0%,rgba(37,125,186,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(88,177,238,1) 0%,rgba(37,125,186,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58b1ee', endColorstr='#257dba',GradientType=0 ); /* IE6-9 */
+	border: 1px solid #338DCC;
+	border-radius: 5px;
+	box-shadow: 0 2px 2px #000, inset 0 1px 2px rgba(255, 255, 255, 0.75);
 }
-	.b-orange-butt:hover{
-		
+	.b-blue-butt:hover{
+		background: rgb(30,154,232); /* Old browsers */
+		background: -moz-linear-gradient(top,  rgba(30,154,232,1) 0%, rgba(0,107,178,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,154,232,1)), color-stop(100%,rgba(0,107,178,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(30,154,232,1) 0%,rgba(0,107,178,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(30,154,232,1) 0%,rgba(0,107,178,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(30,154,232,1) 0%,rgba(0,107,178,1) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(30,154,232,1) 0%,rgba(0,107,178,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e9ae8', endColorstr='#006bb2',GradientType=0 ); /* IE6-9 */
 	}
-.b-1{
-	
+	.b-blue-butt:active{
+		position: relative;
+  		top: 1px;
+	}	
+.yellow-border{
+	border: 1px dashed #D1C48E;
+	box-shadow: inset 0 0 0 6px #FEECA1, 0 0 0 6px #FEECA1, 0 0 30px rgba(58, 92, 133, 0.25);
 }
-	
 @media screen and (max-width: 1250px){
 	
 }
 @media screen and (max-width: 1020px){
 
 }
+.b-1{
+	background-image: url("../i/back-1.jpg");
+	background-size: cover;
+	background-position: 50% 50%;
+}
+	.b-1 .b-block{
+
+	}
+		.b-1 .b-block .header{
+
+		}	
+			.b-1 .b-block .header .left{
+				margin-top: 15px;
+			}	
+				.b-1 .b-block .header .left img{
+					float: left;
+					margin-right: 10px;
+				}
+				.b-1 .b-block .header .left p{
+					color: #000;
+					font-family: "RR";
+					font-size: 16px;
+					font-weight: 400;
+					float: left;
+					text-align: left;
+					width: 485px;
+					margin-top: 20px;
+				}
+			.b-1 .b-block .header .right{
+				text-align: right;
+				margin-top: 20px;
+			}
+				.b-1 .b-block .header .right p{
+					color: #000;
+					font-family: "RR";
+					font-size: 16px;
+					font-weight: 400;
+				}
+				.b-1 .b-block .header .right h2{
+					color: #000;
+					font-family: "RL";
+					font-size: 34px;
+					font-weight: 300;
+				}	
+				.b-1 .b-block .header .right a{
+					color: #257DBA;
+					font-family: "RR";
+					font-size: 16px;
+					font-weight: 400;
+					border-bottom: 1px dashed #257DBA;
+				}
+					.b-1 .b-block .header .right a:hover{
+						border-bottom: none;
+					}
+		.b-1 .b-block .content{
+			text-align: center;
+			margin-top: 18px;
+		}
+			.b-1 .b-block .content h1{
+				color: #1B4F73;
+				font-family: "RL";
+				font-size: 42px;
+				font-weight: 300;
+				margin-bottom: 5px;
+			}
+				.b-1 .b-block .content h1 b{
+					font-size: 50px;
+					font-family: "RB"
+				}
+			.b-1 .b-block .content span{
+				color: #000;
+				font-family: "RL";
+				font-size: 24px;
+				font-weight: 300;
+				background-color: #feeca1;
+				padding: 0px 5px;
+			}
+			.b-1 .b-block .content .form{
+				margin-top: 21px;
+				margin-bottom: 33px;
+				margin-right: 6px;
+				float: right;
+				width: 400px;
+				height: 398px;
+				background-color: #FFF;
+				border-radius: 5px;
+			}
+				.b-1 .b-block .content .form h2{
+					color: #000;
+					font-family: "RL";
+					font-size: 34px;
+					font-weight: 300;
+					margin-top: 30px;
+					line-height: 34px;
+				}
+				.b-1 .b-block .content .form .grey-text{
+					color: #5E5D62;
+					font-family: "RR";
+					font-size: 16px;
+					font-weight: 400;
+					margin-top: 13px;
+					line-height: 20px;
+				}
+				.b-1 .b-block .content .form .text{
+					color: #000;
+					font-family: "RR";
+					font-size: 14px;
+					font-weight: 400;
+					margin-top: 20px;
+				}
+				.b-1 .b-block .content .form form{
+
+				}
+					.b-1 .b-block .content .form input{
+						height: 52px;
+						background-color: #FFF;
+						border: 1px solid #CDCDCD;
+						border-radius: 5px;
+						background-image: url("../i/phone.png");
+						background-repeat: no-repeat;
+						background-position: 10px 50%;
+						padding-left: 73px;
+						margin-top: 8px;
+						color: #5E5D62;
+						font-family: "RR";
+						font-size: 16px;
+						font-weight: 400;
+						padding-right: 47px;
+						margin-bottom: 16px;
+						display: inline-block;
+					}
+					.b-1 .b-block .content .form a{
+						display: inline-block;
+						color: #FFF;
+						font-family: "RB";
+						font-size: 16px;
+						font-weight: 700;
+						text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+						padding: 13px 35px;
+					}
+				.b-1 .b-block .content .form .text-1{
+					color: #000;
+					font-family: "RR";
+					font-size: 14px;
+					font-weight: 400;
+					margin-top: 13px;
+				}
+					.b-1 .b-block .content .form .text-1 b{
+						width: 30px;
+						height: 30px;
+						background-image: url("../i/cube.png");
+						background-repeat: no-repeat;
+						background-position: 50% 50%;
+						color: #000;
+						font-family: "RLI";
+						font-size: 20px;
+						font-weight: 300;
+						padding: 2px 6px;
+					}
