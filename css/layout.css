@@ -76,6 +76,18 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'RBI';
+    src: url('../fonts/roboto-blackitalic-webfont.eot');
+    src: url('../fonts/roboto-blackitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-blackitalic-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-blackitalic-webfont.woff') format('woff'),
+         url('../fonts/roboto-blackitalic-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-blackitalic-webfont.svg#robotoblack_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 html,
 body {
 	position: relative;
@@ -353,3 +365,130 @@ input:-moz-placeholder {
 						font-weight: 300;
 						padding: 2px 6px;
 					}
+.b-2{
+
+}
+	.b-2 .b-block{
+		text-align: center;
+	}
+		.b-2 .b-block .b-head{
+			margin-top: 85px;
+		}
+			.b-2 .b-block .b-head h2{
+				color: #1B4F73;
+				font-family: "RL";
+				font-size: 50px;
+				line-height: 51px;
+			}
+				.b-2 .b-block .b-head h2 b{
+					font-weight: 500;
+					font-family: "RB";
+				}
+			.b-2 .b-block .b-head h3{
+				color: #000;
+				margin-top: 20px;
+				font-family: "RL";
+				font-size: 24px;
+				font-weight: 300;
+			}
+		.b-2 .b-block .b-content{
+			position: relative;
+		}
+			.b-2 .b-block .b-content .b-smile{
+				margin-left: 30px;
+			}
+				.b-2 .b-block .b-content .b-smile li{
+					margin-top: 38px;
+					margin-bottom: 40px;
+				}
+					.b-2 .b-block .b-content .b-smile li img{
+						float: left;
+						margin-right: 20px;
+					}
+					.b-2 .b-block .b-content .b-smile li p{
+						color: #000;
+						text-align: justify;
+						font-family: "RR";
+						font-size: 16px;
+						line-height: 20px;
+					}
+						.b-2 .b-block .b-content .b-smile li p b{
+							font-weight: 500;
+							font-family: "RB";
+						}
+		.b-2 .b-block .b-content .arrow{
+			position: absolute;
+			top: 50%;
+			margin-top: -316px;
+			left: 50%;
+			margin-left: 103px;
+		}
+		.b-2 .b-block .b-content .b-red-butt{
+			color: #E51233;
+			font-family: "RBI";
+			font-size: 16px;
+			font-weight: 700;
+			border: 3px solid #E51233;
+			border-radius: 5px;
+			padding: 4.5px 24.5px;
+			display: inline-block;
+		}
+		.b-2 .b-block .b-content .describe{
+			font-size: 16px;
+			font-family: "RR";
+			color: #000;
+			text-align: justify;
+			margin-top: 70px;
+			margin-left: 115px;
+		}
+		.b-2 .b-block .b-content .number{
+			margin-left: 115px;
+			margin-top: 5px;
+			margin-bottom: 40px;
+		}
+			.b-2 .b-block .b-content .number>li{
+				font-family: "RR";
+				font-size: 16px;
+				color: #000;
+				text-align: justify;
+			}
+				.b-2 .b-block .b-content .number>li:nth-child(3){
+				margin-top: 20px;
+				}
+				.b-2 .b-block .b-content .number>li:nth-child(4){
+				margin-top: 20px;
+				}
+					.b-2 .b-block .b-content .number li span{
+						color: #257DBA;
+						margin-right: 5px;
+				 	}
+				 	.b-2 .b-block .b-content .number li b{
+				 		font-family: "RB";
+				 		font-weight: 500;
+				 	} 
+		.b-2 .b-block .b-content .plus{
+			margin-top: 10px;
+		}	
+			.b-2 .b-block .b-content .plus li{
+				font-family: "RR";
+				font-size: 16px;
+				color: #000;
+				margin-left: 19px;
+				margin-bottom: 10px;
+			}
+				.b-2 .b-block .b-content .plus li img{
+					float: left;
+					margin-right: 5px;
+					margin-top: 4px;
+				}
+				.b-2 .b-block .b-content .plus li p{
+					
+				}
+					.b-2 .b-block .b-content .plus li p b{
+						font-family: "RB";
+						font-weight: 500;
+					}
+		.b-2 .b-block .b-content .red-2{
+			padding: 4.5px 62px;
+			margin-bottom: 114px;
+		}
