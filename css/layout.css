@@ -155,7 +155,7 @@ input.error,textarea.error{
 }
 .b-block{
 	position: relative;
-	width: 1050px;
+	width: 1000px;
 	margin: 0px auto;
 }
 .b-absolute{
@@ -312,8 +312,9 @@ input:-moz-placeholder {
 					font-weight: 400;
 					margin-top: 13px;
 					line-height: 20px;
+					margin-bottom: 20px;
 				}
-				.b-1 .b-block .content .form .text{
+				.b-1 .b-block .content .form form label{
 					color: #000;
 					font-family: "RR";
 					font-size: 14px;
@@ -532,7 +533,7 @@ input:-moz-placeholder {
 			.b-3 .form form{
 				margin-bottom: 17px;
 			}
-				.b-3 .form form b{
+				.b-3 .form form label{
 					color: #000;
 					font-family: "RR";
 					font-size: 14px;
@@ -639,114 +640,79 @@ input:-moz-placeholder {
 			font-size: 24px;
 			font-weight: 300;
 		}
-		.b-4 .list{
-			margin-top: 38px;
-			width: 857px;
-			display: inline-block;
-			overflow: hidden;
-			border-radius: 5px 5px 0px 0px;
-		}
-			.b-4 .list .f-t{
-				color: #FFF;
-				font-family: "RR";
-				line-height: 20px;
-				font-size: 16px;
-				border-radius: 5px 0px 0px 0px;
-				background-color: #257DBA;
-				padding:30px 141px 30px 18px;
-				float: left;
-			}
-			.b-4 .list .s-t{
-				color: #FFF;
-				font-family: "RR";
-				line-height: 20px;
-				font-size: 16px;
-				float: left;
-				background-color: #257DBA;
-				padding: 10px 12px 10px 12px;
-				border-right: 1px solid #FFF;
-				border-left: 1px solid #FFF;
-			}
-			.b-4 .list .t-t{
-				color: #FFF;
-				font-family: "RR";
-				line-height: 20px;
-				font-size: 16px;
-				background-color: #257DBA;
-				padding: 20px 0px;
-			}
-			.b-4 .list ul{
-				display: table;
-			}
-				.b-4 .list ul li{
-					color: #000;
-					font-family: "RR";
-					font-size: 16px;
-					font-weight: 400;
-					background-color: #ffffff;
-					height: 65px;
-					display: inline-table;
-					vertical-align: middle;
-				}
-				.b-4 .list ul li:nth-child(2n+1){
-					background-color: #dcf1f3;
-				}
-					.b-4 .list ul li .text{
-						width: 495px;
-						text-align: left;
-						padding-left: 18px;
-						float: left;
-					}
-					.b-4 .list ul li img{
-						float: left;
-					}
-					.b-4 .list ul li .check{
-						display: block;
-						width: 167px;
-						background-image: url("../i/check-1.png");
-						background-position: 50% 50%;
-						background-repeat: no-repeat;
-						float: left;
-						height: 80px;
-						border-right: 1px dashed #FFF;
-						border-left: 1px dashed #FFF;
-					}
-					.b-4 .list ul li .cross{
-						display: block;
-						width: 175px;
-						background-image: url("../i/cross-1.png");
-						background-position: 50% 50%;
-						background-repeat: no-repeat;
-						float: left;
-						height: 80px;
-					}
-					.b-4 .list ul .first{
-						
-						font-weight: 400;
-					}
-		.b-4 .bottom{
-			float: right;
+		.b-4 .right{
 			width: 338px;
 			margin-top: 10px;
 			margin-bottom: 75px;
+			text-align: center;
+			margin-right: 50px;
 		}
-			.b-4 .bottom h4{
+			.b-4 .right .left-1{
+				margin-right: 20px;
+			}
+			.b-4 .right h4{
 				color: #1B4F73;
 				font-family: "RB";
 				font-size: 20px;
-				float: right;
-				margin-right: 14px;
-				margin-left: 16px;
 				margin-bottom: 10px;
 			}
-			.b-4 .bottom p{
-				float: right;
+			.b-4 .right p{
 				color: #000;
 				font-family: "RR";
 				font-size: 16px;
-				margin-left: 20px;
 			}
-.b-5{
+		.b-4 table{
+			width: 857px;
+			border-radius: 5px 5px 0px 0px;
+			overflow: hidden;
+			margin-top: 38px;
+			display: inline-block;
+		}
+			.b-4 table tr{
+				background-color: #ffffff;
+				height: 78px;
+			}
+				.b-4 table tr:nth-child(2n){
+					background-color: #dcf1f3;
+				}
+				.b-4 table tr th{
+					background-color: #257DBA;
+					
+					color: #FFF;
+					font-family: "RR";
+					font-size: 16px;
+					text-align: center;
+					vertical-align: middle;	
+				}
+					.b-4 table tr th:nth-child(1){
+						width: 495px;
+						text-align: left;
+						padding-left: 18px;
+					}
+					.b-4 table tr th:nth-child(2){
+						width: 167px;
+						border-right: 1px solid #FFF;
+						border-left: 1px solid #FFF;
+					}
+					.b-4 table tr th:nth-child(3){
+						width: 175px;
+					}
+				.b-4 table tr td{
+					color: #000;
+					font-family: "RR";
+					font-size: 16px;
+					text-align: center;
+					vertical-align: middle;
+					
+				}
+					.b-4 table tr td:nth-child(1){
+						text-align: left;
+						padding-left: 18px;
+					}
+					.b-4 table tr td:nth-child(2n+2){
+						border-right: 1px dashed #ffffff;
+						border-left: 1px dashed #ffffff;
+					}
 
 }
 	.b-5 .b-block{
@@ -786,7 +752,7 @@ input:-moz-placeholder {
 				.b-5 .form form{
 
 				}
-					.b-5 .form form b{
+					.b-5 .form form label{
 						color: #000;
 						font-family: "RR";
 						font-size: 14px;
@@ -843,7 +809,7 @@ input:-moz-placeholder {
 			width: 479px;
 			height: 415px;
 			border-right: 1px dashed #969696;
-			margin-left: 45px;
+			margin-left: 19px;
 			margin-top: 40px;
 			float: left;
 			padding-top: 30px;
@@ -940,7 +906,7 @@ input:-moz-placeholder {
 			height: 261px;
 			border-top: 1px dashed #969696;
 			float: left;
-			margin-left: 38px;
+			margin-left: 12px;
 			padding-top: 39px;
 		}
 			.b-5 .third img{
@@ -1008,7 +974,7 @@ input:-moz-placeholder {
 			margin-top: 9px;
 			border-top: 1px dashed #969696;
 			float: left;
-			margin-left: 38px;
+			margin-left: 12px;
 			padding-top: 39px;
 		}
 			.b-5 .fiveth img{
@@ -1061,6 +1027,7 @@ input:-moz-placeholder {
 				font-size: 16px;
 				margin-top: 25px;
 			}
+
 .line{
 	float: left;
 	height: 214px;
@@ -1082,6 +1049,7 @@ input:-moz-placeholder {
 			font-family: "RB";
 			font-size: 38px;
 			padding-top: 65px;
+			letter-spacing: -1px;
 		}
 		.b-6 h3{
 			margin-top: 29px;
@@ -1138,6 +1106,8 @@ input:-moz-placeholder {
 		background-color: #FFF;
 	}	
 		.b-7 a{
+			position: relative;
+  			top: -10px;
 			padding: 14px 13px;
 			margin-top: -20px;
 			display: inline-block;
@@ -1267,7 +1237,7 @@ input:-moz-placeholder {
 		.b-8 .right form{
 			margin-top: 20px;
 		}
-			.b-8 .right form b{
+			.b-8 .right form label{
 				color: #000;
 				font-family: "RR";
 				font-size: 14px;
@@ -1488,7 +1458,7 @@ input:-moz-placeholder {
 			.b-10 ul li{
 				text-align: center;
 				float: left;
-				margin-right: 60px;
+				margin-right: 50px;
 				margin-top: 43px;
 			}
 				.b-10 ul li:first-child{
@@ -1772,6 +1742,26 @@ input:-moz-placeholder {
 	.b-14 .b-block{
 		padding-bottom: 105px;
 	}
+		.b-14 ul{
+			display: inline-block;
+			  margin-left: 261px;
+		}
+			.b-14 ul li{
+				float: left;
+			}
+				.b-14 ul li a{
+					display: block;
+					width: 26px;
+					height: 26px;
+					background-color: #257DBA;
+					border: 6px solid #FFF;
+					border-radius: 50%;
+					margin-right: 20px;
+				}
+					.b-14 ul li a:active{
+						background-color: #CDCDCD;
+						border: 6px solid #FFF;
+					}
 		.b-14 h2{
 			color: #1B4F73;
 			font-family: "RL";
@@ -1784,7 +1774,7 @@ input:-moz-placeholder {
 			}
 		.b-14 .b-block .b-left{
 			margin-right: 22px;
-			margin-left: 45px;
+			margin-left: 15px;
 			display: inline-block;
 			margin-bottom: 70px;
 		}
@@ -1830,28 +1820,6 @@ input:-moz-placeholder {
 				border-radius: 5px;
 				padding: 5px 30px;
 			}
-	.b-14 .circle{
-		margin-left: 291px;
-		margin-top: 13px;
-	}
-		.b-14 .circle .blue{
-			display: inline-block;
-			width: 26px;
-			height: 26px;
-			background-color: #257DBA;
-			border: 6px solid #FFF;
-			border-radius: 50%;
-			margin-right: 20px;
-		}
-		.b-14 .circle .white{
-			margin-right: 20px;
-			display: inline-block;
-			width: 26px;
-			height: 26px;
-			background-color: #CDCDCD;
-			border: 6px solid #FFF;
-			border-radius: 50%;
-		}
 .b-15{
 	background: rgb(253,211,110); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(253,211,110,1) 0%, rgba(254,236,161,1) 100%); /* FF3.6+ */
@@ -1919,7 +1887,7 @@ input:-moz-placeholder {
 				.b-15 .right form{
 					text-align: center;
 				}
-					.b-15 .right form p{
+					.b-15 .right form label{
 						color: #000;
 						font-family: "RR";
 						font-size: 14px;
