@@ -805,21 +805,54 @@ input:-moz-placeholder {
 			font-family: "RL";
 			font-size: 24px;
 		}
-		.b-5 .first{
-			width: 479px;
-			height: 415px;
-			border-right: 1px dashed #969696;
-			margin-left: 19px;
+		.b-5 table{
 			margin-top: 40px;
-			float: left;
-			padding-top: 30px;
-			margin-bottom: 9px;
+			margin-bottom: 85px;
+			margin-left: 15px;
 		}
-			.b-5 .first img{
+			.b-5 table tr:nth-child(1) td{
+				padding-bottom: 45px;
+			}
+			.b-5 table tr:nth-child(3) td{
+				border-bottom: none;
+			}
+				.b-5 table tr td:nth-child(2n+1){
+					border-right: 1px dashed #969696;
+				}
+				.b-5 table tr:nth-child(2):after{
+					content: "Lol";
+					display: block;
+					font-size: 0px;
+					width: 20px;
+					height: 20px;
+					background-color: white;
+					position: relative;
+					top: -10px;
+					left: -494px;
+				}
+				.b-5 table tr:nth-child(3):after{
+					content: "Lol";
+					display: block;
+					font-size: 0px;
+					width: 20px;
+					height: 20px;
+					background-color: white;
+					position: relative;
+					top: -10px;
+					left: -494px;
+				}
+		.b-5 table tr td{
+			width: 479px;
+			border-bottom: 1px dashed #969696;
+			padding-top: 40px;
+			padding-left: 19px;
+			vertical-align: top;
+		}
+			.b-5 table tr td img{
 				float: left;
 				margin-right: 15px;
 			}
-			.b-5 .first h3{
+			.b-5 table tr td h3{
 				float: left;
 				color: #1B4F73;
 				font-family: "RR";
@@ -827,7 +860,7 @@ input:-moz-placeholder {
 				text-align: left;
 				margin-top: -10px;
 			}
-			.b-5 .first div{
+			.b-5 table tr td .circ{
 				background-image: url("../i/round.png");
 				background-position: 50% 50%;
 				width: 297px;
@@ -836,206 +869,83 @@ input:-moz-placeholder {
 				margin-bottom: 10px;
 				margin-top: 28px;
 			}
-				.b-5 .first div .left-text{
+				.b-5 table tr td .circ .left-text{
 					color: #000;
 					font-family: "RR";
 					font-size: 16px;
 					margin-top: 41px;
   					margin-left: -151px;
 				}
-				.b-5 .first div .right-text{
+				.b-5 table tr td .circ .right-text{
 					color: #FFF;
 					font-family: "RR";
 					font-size: 16px;
 					margin-left: 102px;
   					margin-top: -131px;
 				}
-			.b-5 .first p{
+			.b-5 table tr:nth-child(1) td p{
 				color: #000;
 				font-family: "RR";
 				font-size: 16px;
 				margin-left: 83px;
 			}
-		.b-5 .second{
-			width: 469px;
-			height: 424px;
-			float: left;
-			padding-left: 10px;
-			/*margin-left: 45px;*/
-			margin-top: 40px;
-			margin-left: 10px;
-			padding-top: 30px;
-			border-bottom: 1px dashed #969696;
-		}
-			.b-5 .second img{
-				float: left;
-				margin-right: 15px;
-			}
-			.b-5 .second h3{
-				float: left;
-				color: #1B4F73;
-				font-family: "RR";
-				font-size: 24px;
-				text-align: left;
-				margin-top: -10px;
-			}
-			.b-5 .second ul{
+			.b-5 table tr td ul{
 				float: left;
 				margin-left: 132px;
+				margin-top: -47px;
 			}
-				.b-5 .second ul li{
+				.b-5 table tr td ul li{
 					margin-bottom: 15px;
 				}
-				.b-5 .second ul li img{
-					margin-right: 7px;
-				}
-				.b-5 .second ul li span{
+					.b-5 table tr td ul li img{
+						margin-right: 5px;
+					}
+				.b-5 table tr td ul li span{
 					color: #000;
 					text-align: left;
 					font-family: "RR";
 					font-size: 16px;
 					display: block;
-  					margin-left: 27px;
+  					margin-left: 25px;
+  					letter-spacing: -0.3px;
 				}
-					.b-5 .second ul li span b{
+					.b-5 table tr td ul li span b{
 						font-weight: 500;
 						border-bottom: 1px dashed #2579bf;
 					}
-		.b-5 .third{
-			width: 476px;
-			height: 261px;
-			border-top: 1px dashed #969696;
-			float: left;
-			margin-left: 12px;
-			padding-top: 39px;
-		}
-			.b-5 .third img{
-				float: left;
-				margin-right: 15px;
-				margin-left: 7px;
-			}
-			.b-5 .third h3{
-				float: left;
-				color: #1B4F73;
-				font-family: "RR";
-				font-size: 24px;
-				text-align: left;
-				margin-bottom: 30px;
-				margin-top: -10px;
-			}
-			.b-5 .third p{
+			.b-5 table tr:nth-child(2) td p{
 				font-family: "RR";
 				color: #000;
 				font-size: 16px;
 				text-align: left;
-				margin-left: 143px;
+				margin-left: 136px;
+				margin-top: 112px;
+				padding-bottom: 60px;
 			}
-				.b-5 .third p b{
+				.b-5 table tr:nth-child(2) td p b{
 					font-weight: 500;
 					color: #257DBA;
 					font-size: 42px;
 					font-family: "RB";
 				}
-		.b-5 .fourth{
-			width: 469px;
-			height: 261px;
-			float: left;
-			padding-left: 10px;
-			/*margin-left: 45px;*/
-			margin-top: 9px;
-			margin-left: 10px;
-			padding-top: 30px;
-			border-left: 1px dashed #969696;
-		}
-			.b-5 .fourth img{
-				float: left;
-				margin-left: 10px;
-				margin-right: 15px;
-			}
-			.b-5 .fourth h3{
-				float: left;
-				text-align: left;
-				color: #1B4F73;
-				font-family: "RR";
-				font-size: 24px;
-				margin-top: -10px;
-			}
-			.b-5 .fourth p{
-				margin-top: 17px;
+			.b-5 table tr:nth-child(2) td:nth-child(2) p{
+				margin-top: -25px;
 				float: left;
 				text-align: left;
 				font-family: "RR";
 				color: #000;
 				font-size: 16px;
 			}
-		.b-5 .fiveth{
-			width: 476px;
-			height: 214px;
-			margin-top: 9px;
-			border-top: 1px dashed #969696;
-			float: left;
-			margin-left: 12px;
-			padding-top: 39px;
-		}
-			.b-5 .fiveth img{
-				float: left;
-				margin-right: 15px;
-			}
-			.b-5 .fiveth h3{
-				float: left;
-				text-align: left;
-				color: #1B4F73;
-				font-family: "RR";
-				font-size: 24px;
-				margin-top: -10px;
-			}
-			.b-5 .fiveth p{
+			.b-5 table tr:nth-child(3) td p{
 				float: left;
 				text-align: left;
 				font-family: "RR";
 				color: #000;
 				font-size: 16px;
 				margin-top: 25px;
+				margin-bottom: 50px;
 			}
-		.b-5 .six{
-			width: 469px;
-			height: 214px;
-			float: left;
-			padding-left: 10px;
-			margin-top: 9px;
-			margin-left: 10px;
-			padding-top: 30px;
-			border-top: 1px dashed #969696;
-		}
-			.b-5 .six img{
-				float: left;
-				margin-right: 15px;
-			}
-			.b-5 .six h3{
-				float: left;
-				text-align: left;
-				color: #1B4F73;
-				font-family: "RR";
-				font-size: 24px;
-				margin-top: -10px;
-			}
-			.b-5 .six p{
-				float: left;
-				text-align: left;
-				font-family: "RR";
-				color: #000;
-				font-size: 16px;
-				margin-top: 25px;
-			}
-
-.line{
-	float: left;
-	height: 214px;
-	  margin-left: 8px;
-  margin-top: 22px;
-	width: 2px;
-	border-right: 1px dashed #969696;
-}
+		
 .b-6{
 	background-image: url("../i/back-6.jpg");
 	background-size: cover;
