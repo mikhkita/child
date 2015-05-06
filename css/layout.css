@@ -88,6 +88,29 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'RMI';
+    src: url('../fonts/roboto-mediumitalic.eot');
+    src: url('../fonts/roboto-mediumitalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-mediumitalic.woff2') format('woff2'),
+         url('../fonts/roboto-mediumitalic.woff') format('woff'),
+         url('../fonts/roboto-mediumitalic.ttf') format('truetype'),
+         url('../fonts/roboto-mediumitalic.svg#RMI') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'RTH';
+    src: url('../fonts/roboto-thin.eot');
+    src: url('../fonts/roboto-thin.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-thin.woff2') format('woff2'),
+         url('../fonts/roboto-thin.woff') format('woff'),
+         url('../fonts/roboto-thin.ttf') format('truetype'),
+         url('../fonts/roboto-thin.svg#RTH') format('svg');
+    font-weight: normal;
+    font-style: normal;    
+}
 html,
 body {
 	position: relative;
@@ -184,7 +207,7 @@ input:-moz-placeholder {
 	font-family: "RB";
 	font-size: 16px;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
-	box-shadow: 0 2px 2px #000, inset 0 1px 2px rgba(255, 255, 255, 0.75);
+	box-shadow: 0 1px 1px #000, inset 0 1px 2px rgba(255, 255, 255, 0.75);
 }
 	.b-blue-butt:hover{
 		background: rgb(30,154,232); /* Old browsers */
@@ -212,13 +235,14 @@ input:-moz-placeholder {
 	padding: 3px 0px 4px;
 }
 	.b-red-butt:hover {
-		background-color: #e51233;
-		color: white;
+		background-color: #e51233 !important;
+		color: white !important;
 	}
-	.b-red-butt:active {
-		background-color: #c40f2c;
-		border: 3px solid #c40f2c;
-		color: white;
+	.b-red-butt.active {
+		cursor: default;
+		background-color: #c40f2c !important;
+		border: 3px solid #c40f2c !important;
+		color: white !important;
 	}
 .yellow-border{
 	border-radius: 5px;
@@ -232,7 +256,7 @@ input:-moz-placeholder {
 	    padding-top: 20px;
   	}
 
-.form input{
+ input{
 	height: 50px;
 	border: none;
 	border-right: 1px solid #CDCDCD;
@@ -248,7 +272,7 @@ input:-moz-placeholder {
 	margin-right: -1px;
 	border-radius: 5px;
 }
-.form .phone-img {	
+ .phone-img {	
 	background-position: 50%;
 	background-repeat: no-repeat;
 	height: 50px;
@@ -257,15 +281,16 @@ input:-moz-placeholder {
 	display: inline-block;
 	border-right: 1px solid #CDCDCD;
 }
-.form form>div{
+ form>div{
 	border: 1px solid  #CDCDCD;
 	display: inline-block;
 	border-radius: 5px;
 	margin-top: 7px;
 	margin-bottom: 12px;
+	/* text-align: left; */
 }
 
-.form button{
+ button{
 	display: inline-block;
 	padding: 13px 35px;
 	margin-bottom: 3px;
@@ -333,7 +358,9 @@ input:-moz-placeholder {
 					font-size: 16px;
 					font-weight: 400;
 					border-bottom: 1px dashed #257DBA;
-				}
+				
+					display: inline-block;
+}
 					.b-1 .b-block .header .right a:hover{
 						border-bottom: none;
 					}
@@ -346,10 +373,10 @@ input:-moz-placeholder {
 				font-family: "RL";
 				font-size: 42px;
 				font-weight: 300;
-				margin-top: 27px;
+				margin-top: 30px;
 				margin-bottom: 5px;
 			
-				line-height: 1.1;
+				line-height: 46px;
 }
 				.b-1 .b-block .content h1 b{
 					font-size: 50px;
@@ -362,10 +389,10 @@ input:-moz-placeholder {
 				font-size: 24px;
 				font-weight: 300;
 				background-color: #feeca1;
-				padding: 0px 5px;
+				padding: 0px 5px 4px;
 			
-				line-height: 1.2;
-				margin-top: 3px;
+				line-height: 25px;
+				margin-top: 4px;
 				display: inline-block;
 }
 			.b-1 .b-block .content .form{
@@ -409,7 +436,7 @@ input:-moz-placeholder {
 						border-radius: 5px;
 					
 						margin-top: 7px;
-						margin-bottom: 12px;
+						margin-bottom: 13px;
 						/* border-right: none; */
 }
 					.b-1 .b-block .content .form input{
@@ -442,7 +469,7 @@ input:-moz-placeholder {
 					font-family: "RR";
 					font-size: 14px;
 					font-weight: 400;
-					margin-top: 13px;
+					margin-top: 12px;
 				}
 					.b-1 .b-block .content .form .text-1 b{
 						width: 30px;
@@ -640,15 +667,15 @@ input:-moz-placeholder {
 	}
 		.b-3 .form{
 			width: 388px;
-			height: 508px;
+			height: 503px;
 			float: right;
 			margin-top: 73px;
-			margin-bottom: 67px;
+			margin-bottom: 72px;
 			margin-right: 18px;
 			text-align: center;
 		}
 			.b-3 .form.yellow-border>div {
-				padding-bottom: 35px;
+				padding-bottom: 31px;
 			}
 			.b-3 .form h2{
 				display: inline-block;
@@ -776,8 +803,10 @@ input:-moz-placeholder {
 			color: #1B4F73;
 			font-family: "RL";
 			font-size: 50px;
-			margin-top: 73px;
-		}
+			margin-top: 77px;
+		
+			line-height: 1.2;
+}
 			.b-4 h2 b{
 				font-family: "RB";
 			}
@@ -817,7 +846,7 @@ input:-moz-placeholder {
 			width: 857px;
 			border-radius: 5px 5px 0px 0px;
 			overflow: hidden;
-			margin-top: 32px;
+			margin-top: 36px;
 			margin-right: 12px;
 			display: inline-block;
 		}
@@ -882,16 +911,24 @@ input:-moz-placeholder {
 			left: 138px;
 		}
 		.b-5 .form{
-			margin-top: -26px;
-			margin-bottom: 77px;
+			margin-top: -21px;
+			margin-bottom: 70px;
 			margin-right: 10px;
 			display: inline-block;
 			width: 811px;
 			height: 318px;
-			background-color: #FFF;
+			background-color: #c2ddea;
 			border-radius: 5px;
-			border: 1px dashed #dfedf4;
+			border: 1px dashed #fff;
 			box-shadow: inset 0 0 0 6px #c2ddea, 0 0 0 6px #c2ddea, 0 0 30px rgba(58, 92, 133, 0.25);
+		}
+		.b-5 .form>div {
+			background: white;
+	  		
+			margin: 5px;
+			padding-bottom: 37px;
+	    	
+			/* padding-top: 20px; */
 		}
 			.b-5 .form h2{
 				color: #000;
@@ -900,16 +937,15 @@ input:-moz-placeholder {
 				/* line-height: 35px; */
 				/* margin-top: 66px; */
 			
-				padding-top: 34px;
+				padding-top: 23px;
 				line-height: 1.2;
 }
 			.b-5 .form h3{
 				color: #000;
 				font-family: "RL";
 				font-size: 20px;
-				margin-bottom: 1px;
 			
-				line-height: 1.4;
+				margin-bottom: 3px;
 }
 				.b-5 .form form{
 
@@ -947,7 +983,7 @@ input:-moz-placeholder {
 						margin-bottom: 7px;
 					}
 					.b-5 .form form>div{
-            			margin-left: 79px;
+            			margin-left: 74px;
               			display: block;
               			float: left;
           			}
@@ -973,7 +1009,7 @@ input:-moz-placeholder {
 						/* margin-top: 10px; */
 					
 						text-align: right;
-						margin-right: 127px;
+						margin-right: 122px;
 						margin-top: 9px;
 }
 		.b-5 h2{
@@ -983,6 +1019,7 @@ input:-moz-placeholder {
 			/* line-height: 58px; */
 		
 			line-height: 1.2;
+			margin-bottom: 3px;
 }
 			.b-5 h2 b{
 				font-family: "RB";
@@ -992,10 +1029,12 @@ input:-moz-placeholder {
 			color: #000;
 			font-family: "RL";
 			font-size: 24px;
-		}
+		
+			/* line-height: 1.2; */
+}
 		.b-5 table{
-			margin-top: 40px;
-			margin-bottom: 85px;
+			margin-top: 38px;
+			margin-bottom: 82px;
 			margin-left: 15px;
 		}
 			.b-5 table tr:nth-child(1) td{
@@ -1003,7 +1042,9 @@ input:-moz-placeholder {
 			}
 			.b-5 table tr:nth-child(3) td{
 				border-bottom: none;
-			}
+			
+				padding-top: 49px;
+}
 				.b-5 table tr td:nth-child(2) {
 					padding-left: 5px;
 				}
@@ -1011,7 +1052,7 @@ input:-moz-placeholder {
 					border-right: 1px dashed #969696;
 				}
 				.b-5 table tr:nth-child(2) td{
-					padding-top: 30px;
+					padding-top: 47px;
 				}
 				.b-5 table tr:nth-child(2):after{
 					content: "Lol";
@@ -1135,7 +1176,7 @@ p.left-text {}
 				text-align: left;
 				margin-left: 136px;
 				margin-top: 112px;
-				padding-bottom: 60px;
+				padding-bottom: 70px;
 			}
 				.b-5 table tr:nth-child(2) td p b{
 					font-weight: 500;
@@ -1144,13 +1185,16 @@ p.left-text {}
 					font-family: "RB";
 				}
 			.b-5 table tr:nth-child(2) td:nth-child(2) p{
-				margin-top: -25px;
+				margin-top: -29px;
 				float: left;
 				text-align: left;
 				font-family: "RR";
 				color: #000;
+				margin-left: 153px;
 				font-size: 16px;
 			}
+
+p {}
 			.b-5 table tr:nth-child(3) td p{
 				float: left;
 				text-align: left;
@@ -1167,17 +1211,21 @@ p.left-text {}
 	background-position: 50% 50%;
 }
 	.b-6 .b-block{
+    width: 1050px;
 
 	}
 		.b-6 h2{
 			color: #FFF;
 			font-family: "RB";
 			font-size: 38px;
-			padding-top: 65px;
-			letter-spacing: -1px;
-		}
+			padding-top: 70px;
+			/* letter-spacing: -1px; */
+		
+			line-height: 1.2;
+			/* padding-left: 1px; */
+}
 		.b-6 h3{
-			margin-top: 29px;
+			margin-top: 30px;
 			color: #FFF;
 			font-family: "RL";
 			font-size: 26px;
@@ -1185,12 +1233,12 @@ p.left-text {}
 		.b-6 .b-block div{
 			float: right;
 			margin-top: 70px;
-			width: 515px;
+			width: 510px;
 			background-color: #FFF;
 			border-radius: 5px;
-			margin-right: 35px;
+			margin-right: 36px;
 			box-shadow: 0 0 30px rgba(97, 135, 153, 0.25);
-			padding-bottom: 35px;
+			padding-bottom: 39px;
 			margin-bottom: 56px;
 		}
 			.b-6 .b-block div h3{
@@ -1198,9 +1246,11 @@ p.left-text {}
 					font-family: "RL";
 					font-size: 33px;
 					text-align: left;
-					margin-top: 38px;
+					margin-top: 32px;
 					margin-left: 28px;
-				}
+				
+					line-height: 1.2;
+}
 			}
 			.b-6 .b-block div ul{
 				margin-left: 26px;
@@ -1210,38 +1260,42 @@ p.left-text {}
 					font-family: "RR";
 					font-size: 18px;
 					text-align: left;
-					margin-left: 26px;
-					margin-bottom: 24px;
+					margin-left: 33px;
+					margin-bottom: 19px;
 				}
 					.b-6 .b-block div ul li:first-child{
-						margin-top: 52px;
+						margin-top: 55px;
 					}
 					.b-6 .b-block div ul li img{
 						float: left;
-						margin-top: 2px;
+						margin-top: 0px;
 					}
 					.b-6 .b-block div ul li span{
 						margin-left: 52px;
 						display: block;
-					}
+					
+						line-height: 1.2;
+}
 .b-7{
 
 }
 	.b-7 .b-block{
 		background-color: #FFF;
-	}	
+	
+		/* width: 1160px; */
+}	
 		.b-7 a{
 			position: relative;
-  			top: -10px;
+  			
+			top: -25px;
 			padding: 14px 13px;
-			margin-top: -20px;
 			display: inline-block;
 			color: #000;
 			font-family: "RB";
 			font-size: 16px;
 			border: 1px solid #FEC83F;
 			border-radius: 6px;
-			box-shadow: 0 2px 2px #000, inset 0 1px 2px rgba(255, 255, 255, 0.75);
+			box-shadow: 0 1px 1px #000, inset 0 1px 2px rgba(255, 255, 255, 0.75);
 			background: rgb(255,221,83); /* Old browsers */
 			background: -moz-linear-gradient(top,  rgba(255,221,83,1) 0%, rgba(255,185,5,1) 100%); /* FF3.6+ */
 			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,221,83,1)), color-stop(100%,rgba(255,185,5,1))); /* Chrome,Safari4+ */
@@ -1263,10 +1317,11 @@ p.left-text {}
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd428', endColorstr='#fc9700',GradientType=0 ); /* IE6-9 */
 			}
 		.b-7 h2{
-			margin-top: 34px;
-			margin-bottom: 60px;
+			margin-top: 10px;
+			margin-bottom: 58px;
 			color: #1B4F73;
 			font-family: "RL";
+			line-height: 1.2;
 			font-size: 36px;
 		}
 			.b-7 h2 b{
@@ -1279,18 +1334,21 @@ p.left-text {}
 	background-position: 50% 50%;
 }
 	.b-8 .b-block{
+    width: 1050px;
 
 	}
 		.b-8 .left{
-			margin-left: 32px; 
-			margin-top: 58px;
+			margin-left: 22px; 
+			margin-top: 61px;
 		}
 			.b-8 .left .top h2{
 				font-size: 34px;
 				color: #000;
 				font-family: "RL";
 				text-align: left;
-			}
+			
+				line-height: 1.2;
+}
 				.b-8 .left .top h2 b{
 					font-family: "RB";
 					font-size: 42px;
@@ -1302,7 +1360,9 @@ p.left-text {}
 				font-size: 24px;
 				margin-top: 12px;
 				text-align: left;
-			}
+			
+				line-height: 1.2;
+}
 		.b-8 .bottom{
 			float: left;
 			margin-top: 39px;
@@ -1312,13 +1372,20 @@ p.left-text {}
 			}
 			.b-8 .bottom p{
 				float: left;
-				margin-top: 121px;
-				margin-left: -47px;
+				margin-top: 126px;
+				margin-left: -45px;
 				color: #000;
 				text-align: left;
 				font-family: "RR";
 				font-size: 16px;
-			}
+			
+}
+			.b-8 .bottom p span {
+         		margin-top: 12px;
+        	
+         		display: block;
+         		line-height: 1.2;
+}
 				.b-8 .bottom p b{
 				color: #000;
 				font-family: "RR";
@@ -1329,13 +1396,13 @@ p.left-text {}
 			}
 	.b-8 .right{
 		text-align: center;
-		width: 407px;
-		height: 504px;
-		background-color: #FFF;
+		width: 405px;
+		height: 501px;
+		background-color: #c2ddea;
 		border-radius: 5px;
-		border: 1px dashed #D1C48E;
+		border: 1px dashed #FFF;
 		box-shadow: inset 0 0 0 6px #c2ddea, 0 0 0 6px #c2ddea, 0 0 30px rgba(58, 92, 133, 0.25);
-		margin-right: 6px;
+		margin-right: 43px;
 		margin-top: 78px;
 		margin-bottom: 69px;
 	}
@@ -1344,20 +1411,21 @@ p.left-text {}
 			color: #000;
 			font-family: "RL";
 			font-size: 34px;
-			margin-top: 30px;
 		}
 		.b-8 .right h3{
 			display: inline-block;
 			color: #000;
 			font-family: "RL";
 			font-size: 20px;
-		}
+		
+			line-height: 1.2;
+}
 		.b-8 .right p{
 			color: #5E5D62;
 			font-family: "RL";
 			font-size: 16px;
 			font-weight: 400;
-			margin-top: 13px;
+			margin-top: 11px;
 		}
 		.b-8 .right form{
 			margin-top: 20px;
@@ -1369,7 +1437,7 @@ p.left-text {}
 				font-weight: 400;
 				display: inline-block;
 				float: left;
-				margin-left: 63px;
+				margin-left: 57px;
 			}
 			.b-8 .right .name{
 				height: 52px;
@@ -1407,9 +1475,23 @@ p.left-text {}
 				margin-bottom: 16px;
 				display: inline-block;
 			}
-		.b-8 .right a{
+		.b-8 .right>div {
+  			background: white;
+  			margin: 5px;
+ 			
+  			padding-bottom: 33px;
+  			padding-top: 24px;
+   		}
+   		.b-8 .right form>div {
+   			margin-top: 6px;
+   			margin-bottom: 17px;
+   		}
+   		.b-8 .right form input {
+   			width: 249px;
+   		}
+		.b-8 .right form button{
 			color: #000;
-			font-family: "RB";
+			font-family: "RR";
 			font-size: 16px;
 			border: 1px solid #FEC83F;
 			border-radius: 6px;
@@ -1424,9 +1506,11 @@ p.left-text {}
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffdd53', endColorstr='#ffb905',GradientType=0 ); /* IE6-9 */
 			display: inline-block;
 			padding: 14px 13px;
-			margin-bottom: 16px;
-		}
-			.b-8 .right a:hover{
+			margin-bottom: 18px;
+		
+			margin-top: 2px;
+}
+			.b-8 .right button:hover{
 				background: rgb(255,212,40); /* Old browsers */
 				background: -moz-linear-gradient(top,  rgba(255,212,40,1) 0%, rgba(252,151,0,1) 100%); /* FF3.6+ */
 				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,212,40,1)), color-stop(100%,rgba(252,151,0,1))); /* Chrome,Safari4+ */
@@ -1436,6 +1520,7 @@ p.left-text {}
 				background: linear-gradient(to bottom,  rgba(255,212,40,1) 0%,rgba(252,151,0,1) 100%); /* W3C */
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd428', endColorstr='#fc9700',GradientType=0 ); /* IE6-9 */
 			}
+
 		.b-8 .right span{
 			color: #000;
 			font-family: "RR";
@@ -1460,15 +1545,27 @@ p.left-text {}
 }
 	.b-9 .b-block{
 		text-align: center;
-		padding-bottom: 52px;
-	}
+		padding-bottom: 54px;
+	
+		width: 1055px;
+}
+		.b-9 .b-red-butt{
+			margin-top: 27px;
+  			width: 143px;
+  			
+			margin-left: 6px;
+		
+			margin-right: 10px;
+}
 		.b-9 h2{
 			display: inline-block;
-			margin-top: 60px;
+			margin-top: 55px;
 			color: #1B4F73;
 			font-family: "RL";
 			font-size: 50px;
-		}
+		
+			line-height: 1.2;
+}
 			.b-9 h2 b{
 				font-family: "RB";
 				font-weight: 500;
@@ -1486,8 +1583,8 @@ p.left-text {}
 			border: 3px solid #E93854;
 			border-radius: 5px;
 			padding: 4px 46px;
-			margin-right: 19px;
-			margin-top: 25px;
+			margin-right: 18px;
+			margin-top: 26px;
 		}
 		.b-9 .long{
 			display: inline-block;
@@ -1502,13 +1599,15 @@ p.left-text {}
 		.b-9 .first{
 
 		}	
+			
 			.b-9 .top{
-				margin-left: 33px;
 				color: #257DBA;
-				font-family: "RL";
+				font-family: "RTH";
 				font-size: 120px;
 				text-align: left;
-			}
+			
+				margin-left: 25px;
+}
 			.b-9 .text{
 				margin-left: 33px;
 				margin-top: -22px;
@@ -1518,26 +1617,37 @@ p.left-text {}
 				font-size: 32px;
 			}
 			.b-9 .describe{
-				margin-left: 33px;
+				margin-left: 30px;
 				color: #000;
 				font-family: "RL";
 				text-align: left;
 				font-size: 20px;
-				margin-bottom: 30px;
-			}
+				margin-bottom: 37px;
+			
+				margin-top: 8px;
+				line-height: 1.2;
+}
 			.b-9 ul{
 				display: inline-block;
-				/* margin-top: 30px; */
+				margin-top: 32px;
 				float: left;
 			
-				width: 490px;
-				height: 558px;
+				height: 517px;
+				width: 50%;
+				margin-bottom: 0px;
 }
-				.b-9 ul:nth-child(2n){
-					margin-right: 0px;
-				}
+			.b-9 .second{
+				margin-top: 17px;
+			}
+			.b-9 .first.second{
+				height:  620px;
+			}
+			.b-9 .right{
+         		position: relative;
+         		right: 7px;
+      		}
 			.b-9 .first li{
-				margin-bottom: 7px;
+				margin-bottom: 12px;
 			}
 				.b-9 ul li span{
 					color: #000;
@@ -1546,11 +1656,13 @@ p.left-text {}
 					text-align: left;
 					display: block;
 					margin-left: 30px;
-				}
+				
+					line-height: 1.2;
+}
 				.b-9 ul li img{
 					float: left;
 					margin-right: 10px;
-					margin-top: -6px;
+					margin-top: -7px;
 				}
 				.b-b{
 					margin-bottom: -20px;
@@ -1583,14 +1695,17 @@ p.left-text {}
 		.b-10 ul{
 			display: inline-block;
 		}
+			.b-10 ul.first{
+				margin-top: 88px;
+				margin-bottom: 21px;
+			}
 			.b-10 ul li{
 				text-align: center;
 				float: left;
-				margin-right: 50px;
-				margin-top: 43px;
-			}
+				margin: 0 30px 20px;
+}
 				.b-10 ul li:first-child{
-					margin-left: 33px;
+					/* margin-left: -74px; */
 				}
 				.b-10 ul li img{
 
@@ -1600,9 +1715,11 @@ p.left-text {}
 					font-family: "RR";
 					font-size: 20px;
 					text-align: center;
-					margin-top: 7px;
-					margin-bottom: 5px;
-				}
+					margin-top: 8px;
+					margin-bottom: 6px;
+				
+					line-height: 1.2;
+}
 					.b-10 ul li .first{
 						margin-top: -7px;
 					}
@@ -1611,15 +1728,17 @@ p.left-text {}
 					color: #000;
 					font-family: "RR";
 					font-size: 16px;
-				}
+				
+					line-height: 1.2;
+}
 		.b-10 .b-block div{
 			background-image: url("../i/baby-2.png");
 			background-position: 50% 50%;
 			width: 595px;
 			height: 304px;
 			display: inline-block;
-			margin-top: 50px;
-			margin-bottom: 58px;
+			margin-top: 21px;
+			margin-bottom: 61px;
 		}
 			.b-10 .b-block div p{
 				color: #000;
@@ -1632,33 +1751,35 @@ p.left-text {}
 }
 	.b-11 .b-block{
 		text-align: center;
-		padding-bottom: 70px;
+		padding-bottom: 89px;
 	}
 		.b-11 h2{
 			display: inline-block;
 			color: #1B4F73;
 			font-family: "RL";
 			font-size: 50px;
-			line-height: 50px;
-			margin-top: 60px;
+			line-height: 48px;
+			margin-top: 54px;
 		}
 			.b-11 h2 b{
 				font-family: "RB";
 			}
 		.b-11 h3{
-			margin-top: 15px;
+			margin-top: 14px;
 			color: #000;
 			font-family: "RL";
 			font-size: 24px;
 			margin-bottom: 54px;
-		}
+		
+			line-height: 1.2;
+}
 		.b-11 .left{
 			background-image: url("../i/scheme.png");
 			background-position: 50% 50%;
 			width: 469px;
 			height: 388px;
-			/*margin-top: 60px;*/
-			margin-left: 48px;
+			margin-top: 7px;
+			margin-left: 16px;
 		}
 		.b-11 .right{
 
@@ -1668,11 +1789,12 @@ p.left-text {}
 				font-size: 16px;
 				color: #000;
 				text-align: left;
-				/*margin-top: 54px;*/
-				line-height: 21px;
-				margin-bottom: 30px;
-				margin-right: 48px;
-			}
+				margin-top: 11px;
+				margin-bottom: 23px;
+				margin-right: 12px;
+			
+				line-height: 1.2;
+}
 				.b-11 .right p b{
 					color: #257DBA;
 					font-family: "RB";
@@ -1685,15 +1807,17 @@ p.left-text {}
 					text-decoration: underline;
 				}
 		.b-11 .b-block > img{
-			margin-left: -140px;
-			margin-top: 54px;
+			margin-left: -171px;
+			margin-top: 65px;
 		}
 		.b-11 h4{
 			color: #1B4F73;
 			font-family: "RL";
 			font-size: 42px;
-			margin-top: 10px;
-		}
+			margin-top: 15px;
+		
+			line-height: 1.2;
+}
 			.b-11 h4 b{
 				font-family: "RB";
 			}
@@ -1701,9 +1825,11 @@ p.left-text {}
 			color: #000;
 			font-family: "RL";
 			font-size: 24px;
-			margin-top: 10px;
-			margin-bottom: 48px;
-		}
+			margin-top: 15px;
+			margin-bottom: 49px;
+		
+			line-height: 1.2;
+}
 		.b-11 .b-block > a{
 			color: #FFF;
 			font-family: "RB";
@@ -1718,37 +1844,47 @@ p.left-text {}
 }
 	.b-12 .b-block{
 		text-align: center;
-	}
+	
+		width: 1050px;
+}
+
 		.b-12 .b-block h2{
 			color: #FFF;
 			display: inline-block;
 			font-family: "RB";
 			font-size: 50px;
-			margin-top: 50px;
-			line-height: 50px;
-		}
+			margin-top: 42px;
+			line-height: 47px;
+		
+}
 		.b-12 .b-block h3{
 			color: #FFF;
 			display: inline-block;
 			font-family: "RL";
-			font-size: 37px;
-		}
+			font-size: 38px;
+		
+			line-height: 67px;
+}
 		.b-12 .b-block .right{
-			margin-top: 33px;
-			margin-right: 50px;
+			margin-top: 22px;
+			margin-right: 36px;
 		}
 		.b-12 .b-block .form{
 			background-color: #FFF;
-			width: 440px;
+			width: 505px;
 			border-radius: 5px;
-			padding: 28px 35px 36px 35px;
+			box-sizing: border-box;
+			padding: 23px 23px 26px 35px;
 		}
 			.b-12 .b-block .form .top{
 				font-family: "RR";
 				font-size: 20px;
 				color: #000;	
 				text-align: justify;
-			}
+			
+				line-height: 1.2;
+				padding-right: 16px;
+}
 				.b-12 .b-block .form .top b{
 					color: #257DBA;
 					font-family: "RB";
@@ -1756,13 +1892,14 @@ p.left-text {}
 				}
 			.b-12 .b-block .form .bottom{
 				color: #000;
-				margin-top: 35px;
+				margin-top: 32px;
 				line-height: 20px;
 				font-family: "RR";
-				text-align: justify;
 				font-size: 16px;
-				margin-bottom: 24px;
-			}
+				margin-bottom: 17px;
+			
+				text-align: justify;
+}
 			.b-12 .b-block .form a{
 				border: 3px solid #E51233;
 				border-radius: 5px;
@@ -1782,27 +1919,36 @@ p.left-text {}
 		.b-12 .b-block .right > p{
 			font-size: 16px;
 			font-family: "RR";
-			color: #FFF;
-			margin-top: 57px;
+			color: #f3f4f7;
+			margin-top: 58px;
 			text-align: justify;
 			width: 450px;
-			margin-bottom: 40px;
+			/* margin-bottom: 40px; */
 			margin-left: 37px;
+		
+			line-height: 1.2;
+}
+		.b-12 .b-red-butt{
+			width: 181px;
+			padding: 3px 0px 4px !important;
 		}
 .b-13{
 
 }
 	.b-13 .b-block{
 		text-align: center;
-		padding-bottom: 65px;
-	}
+		padding-bottom: 63px;
+	
+		width: 1055px;
+}
 		.b-13 h2{
 			color: #1B4F73;
 			font-family: "RL";
 			font-size: 50px;
-			margin-top: 60px;
-			line-height: 58px;
-		}
+			margin-top: 47px;
+		
+			line-height: 1.2;
+}
 			.b-13 h2 b{
 				font-family: "RB";
 			}
@@ -1810,7 +1956,9 @@ p.left-text {}
 			color: #000;
 			font-family: "RL";
 			font-size: 24px;
-		}
+		
+			line-height: 40px;
+}
 		.b-13 .left{
 			width: 545px;
 			margin-top: 17px;
@@ -1824,19 +1972,23 @@ p.left-text {}
 				font-size: 16px;
 				font-weight: 500;
 				text-align: left;
-			}
+			
+				line-height: 19px;
+}
 			.b-13 .left p{
 				color: #000;
 				font-family: "RR";
 				font-size: 14px;
-				margin-bottom: 33px;
-			}
+				margin-bottom: 28px;
+			
+				line-height: 19px;
+}
 			.b-13 .left a{
 				padding: 14px 23px;
 			}
 		.b-13 .right{
 			margin-top: 2px;
-			margin-right: 27px;
+			margin-right: 39px;
 		}
 			.b-13 .right h4{
 				color: #1B4F73;
@@ -1844,7 +1996,7 @@ p.left-text {}
 				font-size: 24px;
 				font-weight: 400;
 				text-align: left;
-				margin-top: 54px;
+				margin-top: 53px;
 			}
 			.b-13 .right p{
 				margin-top: 17px;
@@ -1852,14 +2004,18 @@ p.left-text {}
 				font-family: "RR";
 				font-size: 16px;
 				text-align: left;
-			}
+			
+				line-height: 1.2;
+				margin-bottom: 5px;
+}
 			.b-13 .right a{
 				color: #E51233;
-				font-family: "RLI";
+				font-family: "RMI";
 				font-size: 14px;
 				border-radius: 5px;
 				border: 3px solid #E51233;
 				float: left;
+				width: 67px;
 				padding: 4px 21px;
 			}
 .b-14{
@@ -1868,7 +2024,7 @@ p.left-text {}
 	background-size: cover;
 }
 	.b-14 .b-block{
-		padding-bottom: 105px;
+		padding-bottom: 85px;
 	}
 		.b-14 ul{
 			display: inline-block;
@@ -1894,9 +2050,11 @@ p.left-text {}
 			color: #1B4F73;
 			font-family: "RL";
 			font-size: 50px;
-			padding-top: 75px;
-			margin-bottom: 50px;
-		}
+			padding-top: 76px;
+			margin-bottom: 56px;
+		
+			line-height: 1.2;
+}
 			.b-14 h2 b{
 				font-family: "RB";
 			}
@@ -1905,7 +2063,8 @@ p.left-text {}
 			margin-left: 15px;
 			display: inline-block;
 			margin-bottom: 70px;
-		}
+		
+}
 			.b-14 .b-block .b-left .woman{
 
 			}
@@ -1948,6 +2107,65 @@ p.left-text {}
 				border-radius: 5px;
 				padding: 5px 30px;
 			}
+	.b-14 .b-block .review-cont {
+		color: #000;
+		margin-left: 15px;
+	
+		margin-bottom: 72px;
+}
+		.b-14 .b-block .review-cont .img-cont p{
+			font-family: "RR";
+  			font-size: 14px;
+		
+			margin-top: 13px;
+}
+			.b-14 .b-block .review-cont .img-cont p b{
+				font-family: "RB";
+				font-size: 16px;
+			
+				line-height: 1.2;
+}
+		.b-14 .b-block .review-cont .img-cont .img {
+			width: 150px;
+			height: 150px;
+			background-position: 50%;
+			border-radius: 75px;
+			margin: 0 auto;
+		}
+		.b-14 .b-block .review-cont .text-cont {
+			margin-left: 33px;
+		}
+			.b-14 .b-block .review-cont .text-cont h3 {
+				position: relative;
+				color: #1B4F73;
+ 				font-family: "RR";
+  				font-size: 20px;
+  				text-align: left;
+			
+				margin-bottom: 14px;
+}
+				.b-14 .b-block .review-cont .text-cont h3:after {
+					position: absolute;
+					background: url("../i/quote.png") 50% no-repeat;
+					height: 49px;
+					width: 62px;
+					top: -35px;
+					left: -67px;
+					content: "s";
+					font-size: 0px;	
+				}
+			.b-14 .b-block .review-cont div:nth-child(2) p {
+				font-family: "RR";
+  				font-size: 16px;
+  				text-align: left;
+				line-height: 20px;
+				margin-bottom: 37px;
+			}
+
+			.b-14 .b-block .review-cont .b-red-butt {
+				display: inline-block;
+			}
+
 .b-15{
 	background: rgb(253,211,110); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(253,211,110,1) 0%, rgba(254,236,161,1) 100%); /* FF3.6+ */
@@ -1963,7 +2181,7 @@ p.left-text {}
 	}
 		.b-15 .b-block > h2{
 			display: inline-block;
-			margin-top: 37px;
+			margin-top: 35px;
 			color: #000;
 			font-family: "RB";
 			font-size: 50px;
@@ -1974,24 +2192,26 @@ p.left-text {}
 			font-size: 24px;
 		}
 		.b-15 .left{
-			margin-top: 54px;
+			margin-top: 51px;
 		}
 			.b-15 .left h3{
 				color: #000;
 				font-family: "RR";
 				font-size: 20px;
 				line-height: 24px;
-			}
+			
+				margin-right: 37px;
+}
 			.b-15 .left img{
 				margin-top: -75px;
-				margin-left: -73px;
+				margin-left: -98px;
 			}
 			.b-15 .left p{
 				font-family: "RR";
 				color: #000;
 				font-size: 16px;
 				margin-top: -175px;
-				margin-left: 362px;
+				margin-left: 335px;
 				text-align: left;
 			}
 				.b-15 .left p b{
@@ -2000,112 +2220,62 @@ p.left-text {}
 					font-family: "RB";
 				}
 		.b-15 .right{
-			width: 390px;
-			background-color: #FFF;
-			margin-right: 6px;
+			width: 388px;
+			background-color: #FEECA1;
+			margin-right: 18px;
 			margin-top: 60px;
 			margin-bottom: 98px;
 		}
+			.b-15 .right> div {
+    padding-bottom: 15px;
+
+			}
 			.b-15 .right h2{
 				color: #000;
 				font-family: "RL";
 				font-size: 26px;
-				margin-top: 33px;
-			}
+			
+				margin-top: 10px;
+				line-height: 1.2;
+}
 				.b-15 .right form{
 					text-align: center;
 				}
+
 					.b-15 .right form label{
 						color: #000;
 						font-family: "RR";
 						font-size: 14px;
 						float: left;
-						margin-left: 59px;
-						margin-top: 40px;
-						margin-bottom: 4px;
+						margin-left: 53px;
+						margin-top: 37px;
+						margin-bottom: 0px;
 					}
-					.b-15 .right form input{
-					height: 52px;
-					/*margin-top: 5px;*/
-					background-color: #FFF;
-					border: 1px solid #CDCDCD;
-					border-radius: 5px;
-					background-image: url("../i/phone.png");
-					background-repeat: no-repeat;
-					background-position: 10px 50%;
-					padding-left: 73px;
-					color: #5E5D62;
-					font-family: "RR";
-					font-size: 16px;
-					font-weight: 400;
-					padding-right: 47px;
-					/*margin-bottom: 16px;*/
-					display: inline-block;
+
+					.b-15 .right form>div{
+						margin-top: 4px;
+						margin-bottom: 26px;
 					}
-					.b-15 .right form a{
-						display: inline-block;
-						margin-top: 25px;
-						padding: 14px 69px;
-						color: #FFF;
-						font-family: "RB";
-						font-size: 16px;
-						text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+					.b-15 .right form button {
+    width: 287px;
+
 					}
-			.b-15 .right > p{
+			.b-15 .right p{
 				color: #000;
 				font-family: "RB";
 				font-size: 14px;
 				line-height: 20px;
-				margin-top: 15px;
-				margin-bottom: 22px;
+				margin-top: 8px;
 			}
 .b-16{
-
+	background-image: none;
+	padding-bottom: 30px;
 }
-	.b-16 .b-block{
 
-	}
-		.b-16 .right{
-				text-align: right;
-				margin-top: 20px;
-				margin-bottom: 31px;
-			}
-				.b-16 .right p{
-					color: #000;
-					font-family: "RR";
-					font-size: 16px;
-					font-weight: 400;
-				}
-				.b-16 .right h2{
-					color: #000;
-					font-family: "RL";
-					font-size: 34px;
-					font-weight: 300;
-				}	
-				.b-16 .right a{
-					color: #257DBA;
-					font-family: "RR";
-					font-size: 16px;
-					font-weight: 400;
-					border-bottom: 1px dashed #257DBA;
-				}
-					.b-16 .right a:hover{
-						border-bottom: none;
-					} 
-	.b-16 .left{
-		margin-top: 15px;
-		margin-left: 32px;
-	}
-		.b-16 .left img{
-			float: left;
-		}
-		.b-16 .left p{
-			color: #000;
-			text-align: left;
-			margin-top: 24px;
-			margin-left: 112px;
-			font-family: "RR";
-			line-height: 20px;
-			font-size: 16px;
-			font-weight: 400;
-		}
+.b.b-1.b-16 {}
+	.b-16 h2 {
+		font-size: 32px !important;
+		font-family: "RR" !important;
+	
+		margin-bottom: 5px;
+}
