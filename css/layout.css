@@ -200,10 +200,75 @@ input:-moz-placeholder {
 		position: relative;
   		top: 1px;
 	}	
+.b-red-butt{
+	color: #E51233;
+	font-family: "RBI";
+	font-size: 16px;
+	font-weight: 700;
+	border: 3px solid #E51233;
+	border-radius: 5px;
+	display: inline-block;
+	width: 181px;
+	padding: 3px 0px 4px;
+}
+	.b-red-butt:hover {
+		background-color: #e51233;
+		color: white;
+	}
+	.b-red-butt:active {
+		background-color: #c40f2c;
+		border: 3px solid #c40f2c;
+		color: white;
+	}
 .yellow-border{
 	border-radius: 5px;
 	border: 1px dashed #D1C48E;
 	box-shadow: inset 0 0 0 6px #FEECA1, 0 0 0 6px #FEECA1, 0 0 30px rgba(58, 92, 133, 0.25);
+}
+	.yellow-border>div{
+		background: white;
+	  	margin: 5px;
+		padding-bottom: 31px;
+	    padding-top: 20px;
+  	}
+
+.form input{
+	height: 50px;
+	border: none;
+	border-right: 1px solid #CDCDCD;
+	width: 232px;
+	color: #5E5D62;
+	font-family: "RR";
+	font-size: 16px;
+	font-weight: 400;
+	display: inline-block;
+	float: left;
+	padding-left: 18px;
+	box-sizing: border-box;
+	margin-right: -1px;
+	border-radius: 5px;
+}
+.form .phone-img {	
+	background-position: 50%;
+	background-repeat: no-repeat;
+	height: 50px;
+	width: 55px;
+	float: left;
+	display: inline-block;
+	border-right: 1px solid #CDCDCD;
+}
+.form form>div{
+	border: 1px solid  #CDCDCD;
+	display: inline-block;
+	border-radius: 5px;
+	margin-top: 7px;
+	margin-bottom: 12px;
+}
+
+.form button{
+	display: inline-block;
+	padding: 13px 35px;
+	margin-bottom: 3px;
 }
 @media screen and (max-width: 1250px){
 	
@@ -237,24 +302,31 @@ input:-moz-placeholder {
 					float: left;
 					text-align: left;
 					width: 485px;
+					line-height: 1.25;
 					margin-top: 20px;
 				}
 			.b-1 .b-block .header .right{
 				text-align: right;
-				margin-top: 20px;
-			}
+				margin-top: 18px;
+			
+				margin-right: 10px;
+}
 				.b-1 .b-block .header .right p{
 					color: #000;
 					font-family: "RR";
 					font-size: 16px;
 					font-weight: 400;
-				}
+				
+					line-height: 1.2;
+}
 				.b-1 .b-block .header .right h2{
 					color: #000;
 					font-family: "RL";
 					font-size: 34px;
 					font-weight: 300;
-				}	
+				
+					/* line-height: 1.2; */
+}	
 				.b-1 .b-block .header .right a{
 					color: #257DBA;
 					font-family: "RR";
@@ -274,12 +346,16 @@ input:-moz-placeholder {
 				font-family: "RL";
 				font-size: 42px;
 				font-weight: 300;
+				margin-top: 27px;
 				margin-bottom: 5px;
-			}
+			
+				line-height: 1.1;
+}
 				.b-1 .b-block .content h1 b{
 					font-size: 50px;
 					font-family: "RB"
-				}
+				;
+}
 			.b-1 .b-block .content span{
 				color: #000;
 				font-family: "RL";
@@ -287,22 +363,24 @@ input:-moz-placeholder {
 				font-weight: 300;
 				background-color: #feeca1;
 				padding: 0px 5px;
-			}
+			
+				line-height: 1.2;
+				margin-top: 3px;
+				display: inline-block;
+}
 			.b-1 .b-block .content .form{
 				margin-top: 21px;
-				margin-bottom: 33px;
-				margin-right: 6px;
+				margin-bottom: 39px;
+				margin-right: 19px;
 				float: right;
-				width: 400px;
-				height: 398px;
-				background-color: #FFF;
+				width: 386px;
+				background-color: #FEECA1;
 			}
 				.b-1 .b-block .content .form h2{
 					color: #000;
 					font-family: "RL";
 					font-size: 34px;
 					font-weight: 300;
-					margin-top: 30px;
 					line-height: 34px;
 				}
 				.b-1 .b-block .content .form .grey-text{
@@ -312,40 +390,53 @@ input:-moz-placeholder {
 					font-weight: 400;
 					margin-top: 13px;
 					line-height: 20px;
-					margin-bottom: 20px;
+					margin-bottom: 14px;
 				}
 				.b-1 .b-block .content .form form label{
 					color: #000;
 					font-family: "RR";
 					font-size: 14px;
-					font-weight: 400;
+					font-weight: 600;
 					margin-top: 20px;
 				}
 				.b-1 .b-block .content .form form{
 
 				}
-					.b-1 .b-block .content .form input{
-						height: 52px;
-						background-color: #FFF;
-						border: 1px solid #CDCDCD;
+					.b-1 .b-block .content .form form>div{
+						border: 1px solid  #CDCDCD;
+  						display: inline-block;
+  						
 						border-radius: 5px;
-						background-image: url("../i/phone.png");
-						background-repeat: no-repeat;
-						background-position: 10px 50%;
-						padding-left: 73px;
-						margin-top: 8px;
+					
+						margin-top: 7px;
+						margin-bottom: 12px;
+						/* border-right: none; */
+}
+					.b-1 .b-block .content .form input{
+						height: 50px;
+  						
+						border: none;
+  						
+						border-right: 1px solid #CDCDCD;
+						width: 232px;
 						color: #5E5D62;
-						font-family: "RR";
-						font-size: 16px;
-						font-weight: 400;
-						padding-right: 47px;
-						margin-bottom: 16px;
-						display: inline-block;
-					}
-					.b-1 .b-block .content .form a{
+  						font-family: "RR";
+  						font-size: 16px;
+  						font-weight: 400;
+  						display: inline-block;
+  						float: left;
+					
+						padding-left: 18px;
+						box-sizing: border-box;
+						margin-right: -1px;
+						border-radius: 5px;
+}
+					.b-1 .b-block .content .form button{
 						display: inline-block;
 						padding: 13px 35px;
-					}
+					
+						margin-bottom: 3px;
+}
 				.b-1 .b-block .content .form .text-1{
 					color: #000;
 					font-family: "RR";
@@ -365,6 +456,8 @@ input:-moz-placeholder {
 						font-weight: 300;
 						padding: 2px 6px;
 					}
+				
+
 .b-2{
 
 }
@@ -372,14 +465,15 @@ input:-moz-placeholder {
 		text-align: center;
 	}
 		.b-2 .b-block .b-head{
-			margin-top: 85px;
+			margin-top: 95px;
 		}
 			.b-2 .b-block .b-head h2{
 				color: #1B4F73;
 				font-family: "RL";
 				font-size: 50px;
-				line-height: 51px;
-			}
+			
+				line-height: 46px;
+}
 				.b-2 .b-block .b-head h2 b{
 					font-weight: 500;
 					font-family: "RB";
@@ -390,17 +484,26 @@ input:-moz-placeholder {
 				font-family: "RL";
 				font-size: 24px;
 				font-weight: 300;
-			}
+			
+				line-height: 1.2;
+}
 		.b-2 .b-block .b-content{
 			position: relative;
 		}
 			.b-2 .b-block .b-content .b-smile{
-				margin-left: 30px;
-			}
+			
+				margin-top: 44px;
+}
 				.b-2 .b-block .b-content .b-smile li{
-					margin-top: 38px;
-					margin-bottom: 40px;
+					margin-bottom: 37px;
 				}
+					.b-2 .b-block .b-content .b-smile li:nth-child(2){
+						margin-bottom: 47px;
+					}
+
+					.b-2 .b-block .b-content .b-smile li:nth-child(3){
+						margin-bottom: 43px;
+					}
 					.b-2 .b-block .b-content .b-smile li img{
 						float: left;
 						margin-right: 20px;
@@ -410,53 +513,89 @@ input:-moz-placeholder {
 						text-align: justify;
 						font-family: "RR";
 						font-size: 16px;
+						float: left;
 						line-height: 20px;
+					
+						width: 907px;
+						margin-top: 6px;
+					}
+					.b-2 .b-block .b-content .b-smile li:nth-child(2) p{
+						margin-top: 2px;
+					}
+					.b-2 .b-block .b-content .b-smile li:nth-child(3) p{
+						margin-top: 1px;
 					}
 						.b-2 .b-block .b-content .b-smile li p b{
 							font-weight: 500;
 							font-family: "RB";
 						}
+						.b-2 .b-block .b-content .b-smile li p span {
+							position: relative;
+						}
+						.b-2 .b-block .b-content .b-smile li p span:after{
+							position: absolute;
+							background: url("../i/ud.png") 50% no-repeat;
+							height: 8px;
+							width: 8px;
+							top: -1px;
+							right: -6px;
+							content: "s";
+  							font-size: 0px;	
+						}
 		.b-2 .b-block .b-content .arrow{
 			position: absolute;
 			top: 50%;
-			margin-top: -316px;
+			margin-top: -291px;
 			left: 50%;
 			margin-left: 103px;
 		}
-		.b-2 .b-block .b-content .b-red-butt{
+/*		.b-2 .b-block .b-content .b-red-butt{
 			color: #E51233;
 			font-family: "RBI";
 			font-size: 16px;
 			font-weight: 700;
 			border: 3px solid #E51233;
 			border-radius: 5px;
-			padding: 4.5px 24.5px;
 			display: inline-block;
-		}
+			width: 171px;
+			padding: 3px 0px 4px;
+}*/
 		.b-2 .b-block .b-content .describe{
 			font-size: 16px;
 			font-family: "RR";
 			color: #000;
 			text-align: justify;
-			margin-top: 70px;
-			margin-left: 115px;
-		}
+			margin-top: 64px;
+			margin-left: 82px;
+		
+			line-height: 1.25;
+			margin-right: 10px;
+}
 		.b-2 .b-block .b-content .number{
-			margin-left: 115px;
-			margin-top: 5px;
-			margin-bottom: 40px;
-		}
+			margin-left: 104px;
+			margin-top: 10px;
+			margin-bottom: 37px;
+		
+			margin-right: 10px;
+}
 			.b-2 .b-block .b-content .number>li{
 				font-family: "RR";
 				font-size: 16px;
 				color: #000;
 				text-align: justify;
-			}
+			
+				line-height: 1.25;
+}
+				.b-2 .b-block .b-content .number>li:nth-child(1){
+				}
+				.b-2 .b-block .b-content .number>li:nth-child(2){
+					margin-top: 10px;
+				}
 				.b-2 .b-block .b-content .number>li:nth-child(3){
-				margin-top: 20px;
+					margin-top: 20px;
 				}
 				.b-2 .b-block .b-content .number>li:nth-child(4){
-				margin-top: 20px;
+					margin-top: 20px;
 				}
 					.b-2 .b-block .b-content .number li span{
 						color: #257DBA;
@@ -489,8 +628,7 @@ input:-moz-placeholder {
 						font-weight: 500;
 					}
 		.b-2 .b-block .b-content .red-2{
-			padding: 4.5px 62px;
-			margin-bottom: 114px;
+			margin-bottom: 112px;
 		}
 .b-3{
 	background-image: url("../i/back-3.jpg");
@@ -501,26 +639,28 @@ input:-moz-placeholder {
 
 	}
 		.b-3 .form{
-			width: 390px;
+			width: 388px;
 			height: 508px;
 			float: right;
-			background-color: #FFF;
 			margin-top: 73px;
-			margin-bottom: 72px;
-			margin-right: 6px;
+			margin-bottom: 67px;
+			margin-right: 18px;
 			text-align: center;
 		}
+			.b-3 .form.yellow-border>div {
+				padding-bottom: 35px;
+			}
 			.b-3 .form h2{
 				display: inline-block;
 				color: #000;
 				line-height: 34px;
-				margin-top: 38px;
+				margin-top: 12px;
 				font-family: "RL";
 				font-size: 34px;
 				font-weight: 300;
 			}
 			.b-3 .form p{
-				margin-top: 15px;
+				margin-top: 10px;
 				color: #5E5D62;
 				font-family: "RR";
 				font-size: 16px;
@@ -539,8 +679,13 @@ input:-moz-placeholder {
 					font-size: 14px;
 					font-weight: 400;
 					float: left;
-					margin-left: 56px;
+					margin-left: 52px;
 				}
+				.b-3 .form form>div {
+					margin-top: 3px;
+				
+					margin-bottom: 16px;
+}
 				.b-3 .form form .phone{
 					height: 52px;
 					margin-top: 5px;
@@ -589,11 +734,11 @@ input:-moz-placeholder {
 			}
 		.b-3 .text{
 			float: right;
-			margin-right: 35px;
+			margin-right: 32px;
 			margin-top: 80px;
 		}
 			.b-3 .text img{
-				margin-left: -305px;
+				margin-left: -317px;
 			}
 			.b-3 .text h3{
 				width: 226px;
@@ -601,11 +746,13 @@ input:-moz-placeholder {
 				color: #257DBA;
 				font-family: "RL";
 				font-size: 24px;
-				margin-top: -19px;
-			}
+				margin-top: -15px;
+			
+				line-height: 1.2;
+}
 			.b-3 .text h4{
 				line-height: 20px;
-				margin-top: 45px;
+				margin-top: 48px;
 				color: #000;
 				text-align: left;
 				font-family: "RR";
@@ -629,7 +776,7 @@ input:-moz-placeholder {
 			color: #1B4F73;
 			font-family: "RL";
 			font-size: 50px;
-			margin-top: 75px;
+			margin-top: 73px;
 		}
 			.b-4 h2 b{
 				font-family: "RB";
@@ -642,10 +789,10 @@ input:-moz-placeholder {
 		}
 		.b-4 .right{
 			width: 338px;
-			margin-top: 10px;
+			margin-top: -1px;
 			margin-bottom: 75px;
 			text-align: center;
-			margin-right: 50px;
+			margin-right: 60px;
 		}
 			.b-4 .right .left-1{
 				margin-right: 20px;
@@ -654,32 +801,40 @@ input:-moz-placeholder {
 				color: #1B4F73;
 				font-family: "RB";
 				font-size: 20px;
-				margin-bottom: 10px;
-			}
+				margin-bottom: 12px;
+			
+				line-height: 1.2;
+				margin-top: 4px;
+}
 			.b-4 .right p{
 				color: #000;
 				font-family: "RR";
 				font-size: 16px;
-			}
+			
+				line-height: 1.2;
+}
 		.b-4 table{
 			width: 857px;
 			border-radius: 5px 5px 0px 0px;
 			overflow: hidden;
-			margin-top: 38px;
+			margin-top: 32px;
+			margin-right: 12px;
 			display: inline-block;
 		}
 			.b-4 table tr{
 				background-color: #ffffff;
-				height: 78px;
-			}
-				.b-4 table tr:nth-child(2n){
+				height: 64px;
+			
+				line-height: 1.25;
+}
+				.b-4 table tr:nth-child(2n+1){
 					background-color: #dcf1f3;
 				}
 				.b-4 table tr th{
 					background-color: #257DBA;
 					
 					color: #FFF;
-					font-family: "RR";
+					font-family: "RL";
 					font-size: 16px;
 					text-align: center;
 					vertical-align: middle;	
@@ -722,43 +877,55 @@ input:-moz-placeholder {
 	}
 		.baby{
 			position: absolute;
-			top: -155px;
-  			left: 167px;
+			top: -161px;
+  			
+			left: 138px;
 		}
 		.b-5 .form{
 			margin-top: -26px;
-			margin-bottom: 90px;
+			margin-bottom: 77px;
+			margin-right: 10px;
 			display: inline-block;
 			width: 811px;
 			height: 318px;
 			background-color: #FFF;
 			border-radius: 5px;
-			border: 1px dashed #D1C48E;
+			border: 1px dashed #dfedf4;
 			box-shadow: inset 0 0 0 6px #c2ddea, 0 0 0 6px #c2ddea, 0 0 30px rgba(58, 92, 133, 0.25);
 		}
 			.b-5 .form h2{
 				color: #000;
 				font-family: "RL";
 				font-size: 34px;
-				line-height: 35px;
-				margin-top: 37px;
-			}
+				/* line-height: 35px; */
+				/* margin-top: 66px; */
+			
+				padding-top: 34px;
+				line-height: 1.2;
+}
 			.b-5 .form h3{
 				color: #000;
 				font-family: "RL";
 				font-size: 20px;
-				margin-bottom: 5px;
-			}
+				margin-bottom: 1px;
+			
+				line-height: 1.4;
+}
 				.b-5 .form form{
 
-				}
+				
+    text-align: left;
+}
 					.b-5 .form form label{
 						color: #000;
 						font-family: "RR";
 						font-size: 14px;
-						margin-left: -462px;
 						font-weight: 500;
-					}
+					
+						display: block;
+						text-align: left;
+						margin-left: 91px;
+}
 					.b-5 .form form .phone{
 						margin-top: 7px;
 						height: 52px;
@@ -779,6 +946,20 @@ input:-moz-placeholder {
 						margin-right: 42px;
 						margin-bottom: 7px;
 					}
+					.b-5 .form form>div{
+            			margin-left: 79px;
+              			display: block;
+              			float: left;
+          			}
+          			.b-5 .form form>div input{
+                  		width: 249px;
+                	}
+                	.b-5 .form form button{
+                  		padding: 14px 13px;
+  						
+                  		margin-left: 43px;
+  						margin-top: 6px;
+                	}
 					.b-5 .form form a{
 						margin-top: 7px;
 						padding: 15px 14px;
@@ -787,20 +968,27 @@ input:-moz-placeholder {
 						color: #000;
 						font-family: "RR";
 						font-size: 14px;
-						margin-left: 333px;
-  						margin-top: 10px;
-					}
+						/* margin-left: 333px; */
+  						
+						/* margin-top: 10px; */
+					
+						text-align: right;
+						margin-right: 127px;
+						margin-top: 9px;
+}
 		.b-5 h2{
 			color: #1B4F73;
 			font-family: "RL";
 			font-size: 50px;
-			line-height: 58px;
-		}
+			/* line-height: 58px; */
+		
+			line-height: 1.2;
+}
 			.b-5 h2 b{
 				font-family: "RB";
 			}
 		.b-5 h3{
-			margin-top: 10px;
+			margin-top: 0px;
 			color: #000;
 			font-family: "RL";
 			font-size: 24px;
@@ -816,8 +1004,14 @@ input:-moz-placeholder {
 			.b-5 table tr:nth-child(3) td{
 				border-bottom: none;
 			}
+				.b-5 table tr td:nth-child(2) {
+					padding-left: 5px;
+				}
 				.b-5 table tr td:nth-child(2n+1){
 					border-right: 1px dashed #969696;
+				}
+				.b-5 table tr:nth-child(2) td{
+					padding-top: 30px;
 				}
 				.b-5 table tr:nth-child(2):after{
 					content: "Lol";
@@ -844,13 +1038,20 @@ input:-moz-placeholder {
 		.b-5 table tr td{
 			width: 479px;
 			border-bottom: 1px dashed #969696;
-			padding-top: 40px;
-			padding-left: 19px;
+			padding-top: 34px;
+			padding-left: 0px;
 			vertical-align: top;
 		}
+
 			.b-5 table tr td img{
 				float: left;
 				margin-right: 15px;
+			}
+			.b-5 table tr td:nth-child(2) img {
+				margin-left: 15px;
+			}
+			.b-5 table tr:nth-child(3) td img {
+				margin-right: 33px;
 			}
 			.b-5 table tr td h3{
 				float: left;
@@ -858,8 +1059,9 @@ input:-moz-placeholder {
 				font-family: "RR";
 				font-size: 24px;
 				text-align: left;
-				margin-top: -10px;
-			}
+			
+				line-height: 1.2;
+}
 			.b-5 table tr td .circ{
 				background-image: url("../i/round.png");
 				background-position: 50% 50%;
@@ -867,36 +1069,49 @@ input:-moz-placeholder {
 				height: 195px;
 				float: left;
 				margin-bottom: 10px;
-				margin-top: 28px;
-			}
+				margin-top: 30px;
+			
+				margin-left: -4px;
+}
 				.b-5 table tr td .circ .left-text{
 					color: #000;
 					font-family: "RR";
 					font-size: 16px;
-					margin-top: 41px;
+					margin-top: 53px;
   					margin-left: -151px;
-				}
+				
+					line-height: 1.3;
+}
+
+p.left-text {}
 				.b-5 table tr td .circ .right-text{
 					color: #FFF;
 					font-family: "RR";
 					font-size: 16px;
 					margin-left: 102px;
-  					margin-top: -131px;
-				}
+  					
+					margin-top: -124px;
+				
+					line-height: 1.3;
+}
 			.b-5 table tr:nth-child(1) td p{
 				color: #000;
 				font-family: "RR";
 				font-size: 16px;
 				margin-left: 83px;
 			}
+
 			.b-5 table tr td ul{
 				float: left;
-				margin-left: 132px;
-				margin-top: -47px;
-			}
+				margin-left: 122px;
+				margin-top: -43px;
+			
+				width: 358px;
+}
 				.b-5 table tr td ul li{
-					margin-bottom: 15px;
-				}
+					margin-bottom: 10px;	
+					line-height: 1.25;
+}
 					.b-5 table tr td ul li img{
 						margin-right: 5px;
 					}
@@ -907,11 +1122,11 @@ input:-moz-placeholder {
 					font-size: 16px;
 					display: block;
   					margin-left: 25px;
-  					letter-spacing: -0.3px;
+  					
 				}
 					.b-5 table tr td ul li span b{
 						font-weight: 500;
-						border-bottom: 1px dashed #2579bf;
+						border-bottom: 2px dashed #2579bf;
 					}
 			.b-5 table tr:nth-child(2) td p{
 				font-family: "RR";
@@ -1312,11 +1527,14 @@ input:-moz-placeholder {
 			}
 			.b-9 ul{
 				display: inline-block;
-				margin-top: 30px;
+				/* margin-top: 30px; */
 				float: left;
-			}
+			
+				width: 490px;
+				height: 558px;
+}
 				.b-9 ul:nth-child(2n){
-					margin-right: 15px;
+					margin-right: 0px;
 				}
 			.b-9 .first li{
 				margin-bottom: 7px;
