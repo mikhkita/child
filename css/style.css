@@ -103,104 +103,6 @@ input::-webkit-input-placeholder {
 input:-moz-placeholder {
 	color: #434343;
 }
-.b-blue-butt{
-	background: rgb(88,177,238); /* Old browsers */
-	background: -moz-linear-gradient(top,  rgba(88,177,238,1) 0%, rgba(37,125,186,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(88,177,238,1)), color-stop(100%,rgba(37,125,186,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(88,177,238,1) 0%,rgba(37,125,186,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(88,177,238,1) 0%,rgba(37,125,186,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(88,177,238,1) 0%,rgba(37,125,186,1) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(88,177,238,1) 0%,rgba(37,125,186,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58b1ee', endColorstr='#257dba',GradientType=0 ); /* IE6-9 */
-	border: 1px solid #338DCC;
-	border-radius: 5px;
-	color: #FFF;
-	font-family: "RB";
-	font-size: 16px;
-	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
-	box-shadow: 0 1px 1px #000, inset 0 1px 2px rgba(255, 255, 255, 0.75);
-}
-	.b-blue-butt:hover{
-		background: rgb(30,154,232); /* Old browsers */
-		background: -moz-linear-gradient(top,  rgba(30,154,232,1) 0%, rgba(0,107,178,1) 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,154,232,1)), color-stop(100%,rgba(0,107,178,1))); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(top,  rgba(30,154,232,1) 0%,rgba(0,107,178,1) 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(top,  rgba(30,154,232,1) 0%,rgba(0,107,178,1) 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(top,  rgba(30,154,232,1) 0%,rgba(0,107,178,1) 100%); /* IE10+ */
-		background: linear-gradient(to bottom,  rgba(30,154,232,1) 0%,rgba(0,107,178,1) 100%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e9ae8', endColorstr='#006bb2',GradientType=0 ); /* IE6-9 */
-	}
-	.b-blue-butt:active{
-		position: relative;
-  		top: 1px;
-	}	
-.b-red-butt{
-	color: #E51233;
-	font-family: "RBI";
-	font-size: 16px;
-	font-weight: 700;
-	border: 3px solid #E51233;
-	border-radius: 5px;
-	display: inline-block;
-	width: 181px;
-	padding: 3px 0px 4px;
-}
-	.b-red-butt:hover {
-		background-color: #e51233 !important;
-		color: white !important;
-	}
-	.b-red-butt.active {
-		cursor: default;
-		background-color: #c40f2c !important;
-		border: 3px solid #c40f2c !important;
-		color: white !important;
-	}
-.yellow-border{
-	border-radius: 5px;
-	border: 1px dashed #D1C48E;
-	box-shadow: inset 0 0 0 6px #FEECA1, 0 0 0 6px #FEECA1, 0 0 30px rgba(58, 92, 133, 0.25);
-}
-	.yellow-border>div{
-		background: white;
-	  	margin: 5px;
-		padding-bottom: 31px;
-	    padding-top: 20px;
-  	}
-
- input{
-	height: 50px;
-	border: none;
-	border-right: 1px solid #CDCDCD;
-	width: 232px;
-	color: #5E5D62;
-	font-family: "RR";
-	font-size: 16px;
-	font-weight: 400;
-	display: inline-block;
-	float: left;
-	padding-left: 18px;
-	box-sizing: border-box;
-	margin-right: -1px;
-	border-radius: 5px;
-}
- .phone-img {	
-	background-position: 50%;
-	background-repeat: no-repeat;
-	height: 50px;
-	width: 55px;
-	float: left;
-	display: inline-block;
-	border-right: 1px solid #CDCDCD;
-}
- form>div{
-	border: 1px solid  #CDCDCD;
-	display: inline-block;
-	border-radius: 5px;
-	margin-top: 7px;
-	margin-bottom: 12px;
-	/* text-align: left; */
-}
-
  button{
 	display: inline-block;
 	padding: 13px 35px;
@@ -230,7 +132,8 @@ input:-moz-placeholder {
 			}	
 				.b-1 .b-block .left img{
 					float: left;
-					margin-right: 10px;
+					margin-right: 13px;
+					margin-left: -5px;
 				}
 				.b-1 .b-block .left p{
 					color: #000;
@@ -254,6 +157,9 @@ input:-moz-placeholder {
 					font-size: 16px;
 					font-weight: 400;
 					line-height: 1.2;
+					text-align: justify;
+ 					margin-left: 17px;
+ 					margin-top: 1px;
 				}
 				.b-1 .b-block .right h2{
 					color: #000;
@@ -261,17 +167,6 @@ input:-moz-placeholder {
 					font-size: 34px;
 					font-weight: 300;
 				}	
-				.b-1 .b-block .right a{
-					color: #257DBA;
-					font-family: "RR";
-					font-size: 16px;
-					font-weight: 400;
-					border-bottom: 1px dashed #257DBA;
-					display: inline-block;
-				}
-					.b-1 .b-block .right a:hover{
-						border-bottom: none;
-					}
 .b-2{
 
 }
@@ -286,7 +181,8 @@ input:-moz-placeholder {
 				font-family: "RL";
 				font-size: 34px;
 				text-align: left;
-				margin-top: -10px;
+				margin-top: -7px;
+				margin-left: -7px;
 			}
 			.b-2 .b-block .b-top p{
 				color: #000;
@@ -294,29 +190,34 @@ input:-moz-placeholder {
 				font-size: 16px;
 				text-align: left;
 				width: 448px;
-				margin-top: 20px;
-				line-height: 21px;
+				margin-top: 19px;
+				line-height: 19px;
+				margin-left: -6px;
 			}
 		.b-2 .b-block .b-bottom{
 			text-align: left;
 			margin-top: 30px;
 		}
-			.b-2 .b-block .b-bottom div{
+			.b-2 .b-block .b-bottom .left{
 				background-image: url("../i/doc-3.png");
 				background-position: 50% 50%;
 				width: 152px;
 				height: 152px;
 				float: left;
 				margin-right: 17px;
+				margin-top: 2px;
+				margin-left: -7px;
 			}
 			.b-2 .b-block .b-bottom p{
 				color: #000;
 				padding-top: 16px;
 				font-family: "RR";
 				font-size: 14px;
+				line-height: 17px;
 			}
 			.b-2 .b-block .b-bottom img{
 				margin-left: 111px;
+				margin-top: 5px;
 			}
 .b-3{
 	background-color: #ddf0f4;
@@ -325,11 +226,12 @@ input:-moz-placeholder {
 		padding-bottom: 22px;
 	}
 		.b-3 .b-block .left{
-				margin-top: 15px;
+				margin-top: 11px;
 			}	
 				.b-3 .b-block .left img{
 					float: left;
-					margin-right: 10px;
+					margin-right: 13px;
+					margin-left: -5px;
 				}
 				.b-3 .b-block .left p{
 					color: #000;
@@ -353,6 +255,9 @@ input:-moz-placeholder {
 					font-size: 16px;
 					font-weight: 400;
 					line-height: 1.2;
+					margin-top: -3px;
+					text-align: justify;
+ 					margin-left: 17px;
 				}
 				.b-3 .b-block .right h2{
 					color: #000;
@@ -360,16 +265,3 @@ input:-moz-placeholder {
 					font-size: 34px;
 					font-weight: 300;
 				}	
-				.b-3 .b-block .right a{
-					color: #FFF;
-					margin-top: 12px;
-					font-family: "RR";
-					font-size: 16px;
-					font-weight: 400;
-					text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
-					display: inline-block;
-					padding: 5.5px 16px;
-				}
-					.b-3 .b-block .right a:hover{
-						border-bottom: none;
-					}
