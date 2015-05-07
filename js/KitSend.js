@@ -9,15 +9,16 @@ function getNextField($form){
 var customHandlers = [];
 
 $(document).ready(function(){	
-	var rePhone = /^\+\d \(\d{3}\) \d{3}-\d{2}-\d{2}$/,
-		tePhone = '+7 (999) 999-99-99';
+	var rePhone = /^\+\d \( \d \d \d \) \d \d \d - \d \d - \d \d$/,
+		tePhone = '+7 ( 9 9 9 ) 9 9 9 - 9 9 - 9 9';
 
 	$.validator.addMethod('customPhone', function (value) {
 		return rePhone.test(value);
 	});
 
-	$(".ajax").parents("form").each(function(){
+	$(".ajax").parents("form").each(function(){     
 		$(this).validate({
+			validClass: "success",
 			rules: {
 				email: 'email',
 				phone: 'customPhone'
@@ -43,6 +44,7 @@ $(document).ready(function(){
 		$this.fancybox({
 			padding : 0,
 			content : $popup,
+			openSpeed: 'fast',
 			helpers: {
 	         	overlay: {
 	            	locked: true 
@@ -63,7 +65,9 @@ $(document).ready(function(){
 					customHandlers[$this.attr("data-afterShow")]($this);
 				}
 			},
-			beforeClose: function(){
+			beforeClose: function(){ 
+				$("input.error").parent().removeClass("error");
+				$("input.error,textarea.error").removeClass("error");
 				if( $this.attr("data-beforeClose") && customHandlers[$this.attr("data-beforeClose")] ){
 					customHandlers[$this.attr("data-beforeClose")]($this);
 				}
@@ -88,8 +92,30 @@ $(document).ready(function(){
 	$(".fancy-img").fancybox({
 		padding : 0
 	});
-
+	$("input").focus(function(){
+		$(this).parent().removeClass("error");
+		$(this).removeClass("error");
+		$(this).css("border-right","1px solid #FFDC49");  
+		$(this).parent().css("border","1px solid #FFDC49");
+		// #feeca1
+	});
+	
+	$("input").focusout(function(){
+		$(this).css("border-right","1px solid #CDCDCD");  
+		$(this).parent().css("border","1px solid #CDCDCD");
+		// #feeca1
+	});
+	$("textarea").focus(function() {
+		$(this).removeClass("error");
+		$(this).css("border","1px solid #FFDC49"); 
+	});
+	$("textarea").focusout(function(){
+		$(this).css("border","1px solid #CDCDCD");  
+		// #feeca1
+	});
 	$(".ajax").parents("form").submit(function(){
+		$("input.success").parent().removeClass("error");
+		$("input.error").parent().addClass("error");
   		if( $(this).find("input.error").length == 0 ){
   			var $this = $(this),
   				$thanks = $($this.attr("data-block"));
@@ -103,9 +129,8 @@ $(document).ready(function(){
 			  	url: $(this).attr("action"),
 			  	data:  $this.serialize(),
 				success: function(msg){
-					var $form;
 					if( msg == "1" ){
-						$form = $thanks;
+						window.location.assign("http://child:88/thanks.html");
 					}else{
 						$form = $("#b-popup-error");
 					}
@@ -124,4 +149,40 @@ $(document).ready(function(){
   		}
   		return false;
   	});
+
+	$(".b-9 ul").each(function(){
+  		for (var i = 3; i < $(this).find("li").length; i++) {
+  			$(this).find("li").eq(i).hide();
+		};
+	});
+
+  	$("#full").click(function(){
+  		if( !$(this).hasClass("active") ){
+  			$(this).addClass("active");
+	  		$("#preview").removeClass("active");
+	  		$(".b-9 ul").each(function(){
+		  		for (var i = 3; i < $(this).find("li").length; i++) {
+		  			$(this).find("li").eq(i).slideDown();
+		  		};
+	  		});
+	  		
+  		}
+  		return false;
+  	});
+
+  	$("#preview").click(function(){
+  		if( !$(this).hasClass("active") ){
+  			$(this).addClass("active");
+	  		$("#full").removeClass("active");
+	  		$(".b-9 ul").each(function(){
+		  		for (var i = 3; i < $(this).find("li").length; i++) {
+		  			$(this).find("li").eq(i).slideUp();
+		  		};
+	  		});
+	  		$(this).css("height","auto");
+  		}
+  		return false;
+  	});
+
+
 });

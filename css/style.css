@@ -24,6 +24,7 @@
 }
 html,
 body {
+	height: 100%;
 	position: relative;
 }
 body {
@@ -265,3 +266,14 @@ input:-moz-placeholder {
 					font-size: 34px;
 					font-weight: 300;
 				}	
+
+.page-wrapper {
+    min-height: 100%;
+    margin-bottom: -120px;
+}
+* html .page-wrapper {
+    height: 100%;
+}
+.page-buffer {
+    height: 120px;
+}

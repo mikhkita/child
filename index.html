@@ -49,7 +49,7 @@
 				<div class="right">
 					<p>Есть вопрос? Звоните - поможем!</p>
 					<h2>+7(499) 399-35-09</h2>
-					<a href="#">Заказать звонок</a>
+					<a href="#" class="fancy" data-block="#callback">Заказать звонок</a>
 				</div>
 			</div>
 			<div class="content clearfix">
@@ -62,13 +62,14 @@
 						<div class="clearfix">
 						<h2>Подберем лучший<br>роддом</h2>
 						<p class="grey-text">по Вашим медицинским показаниям<br>за 10 минут</p>
-						<form class="clearfix">
+						<form method="POST" action="kitsend.php" class="clearfix">
 							<label for="phone1">Введите Ваш телефон, и мы перезвоним:</label>
 							<div>
 								<div class="phone-img" style="background-image: url('i/phone.png');"></div>
 								<input type="text" id="phone1" name="phone" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" required/>
 							</div>
-							<button class="b-blue-butt" type="submit">Подобрать хороший роддом!</button>		
+							<input type="hidden" name="subject" value="Подбор роддома">
+							<button class="ajax b-blue-butt" type="submit">Подобрать хороший роддом!</button>		
 						</form>
 						<p class="text-1">Сегодня мы подобрали уже<b>24</b> роддома</p>
 						</div>
@@ -88,7 +89,7 @@
 				<ul class="b-smile">
 					<li class="clearfix">
 						<img src="i/sad.png">
-						<p>&emsp;Роддом<span>а</span> зарабатывают только на оказываемых услугах. И в 96% случаев после покупки контракта на роды Вам предложат пройти дополнительные, не всегда безопасные обследования и процедуры. А как проверить, нужны ли они? Никак, если Вы не врач. В итоге к стоимости контракта на роды нередко приходится доплачивать от 30 до 400%.
+						<p>&emsp;Роддом<span class="ud">а</span> зарабатывают только на оказываемых услугах. И в 96% случаев после покупки контракта на роды Вам предложат пройти дополнительные, не всегда безопасные обследования и процедуры. А как проверить, нужны ли они? Никак, если Вы не врач. В итоге к стоимости контракта на роды нередко приходится доплачивать от 30 до 400%.
 						</p>
 					</li>
 					<li class="clearfix">
@@ -136,20 +137,21 @@
 				<div>
 				<h2>Получите 10 правил<br> и узнайте</h2>
 				<p>чего не следует делать во время беремен-<br>ности, как подготовиться к родам и избе-<br>жать послеродовых осложнений</p>
-				<form class="clearfix">
+				<form method="POST" action="kitsend.php" class="clearfix">
 					<label for="phone2">Введите Ваш телефон:</label>
 					<div class="clearfix">
 						<div class="phone-img" style="background-image: url('i/phone.png');"></div>
 						<input type="text" id="phone2" name="phone" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" required/>
 					</div>
-					<label for="mail1">Введите Ваш E-mail:</label>
+					<label for="email1">Введите Ваш E-mail:</label>
 					<div class="clearfix">
 						<div class="phone-img" style="background-image: url('i/mail.png');"></div>
-						<input type="text" id="mail1" name="phone" placeholder="ivanova@mail.ru" required/>
+						<input type="text" id="email1" name="email" placeholder="ivanova@mail.ru" required/>
 					</div>
-					<a class="b-blue-butt" href="">Получить 10 простых правил</a>
+					<input type="hidden" name="subject" value="Получение правил">
+					<button class="ajax b-blue-butt" type="submit">Получить 10 простых правил</button>
 				</form>
-				<b>Правила будут отправлены вам на почту</b>
+				<b>Правила будут отправлены Вам на почту</b>
 				</div>
 			</div>
 			<div class="text">
@@ -163,7 +165,7 @@
 	<div class="b b-4">
 		<div class="b-block clearfix">
 			<h2><b>Сравните </b>наши услуги с роддомом</h2>
-			<h3>и узнайте, что входи в наш полис за 49 т.р.</h3>
+			<h3>и узнайте, что входит в наш полис за 49 т.р.</h3>
 				<table>
 					<tr style="height:78px;">
 						<th>Услуги, важные для здоровья мамы и ребенка</th>
@@ -255,13 +257,14 @@
 				<div>
 				<h2>Получите подробную консультацию<br>по страхованию родов</h2>
 				<h3>Наш специалист с удовольствием объяснит<br>все условия  за 10 минут</h3>
-				<form class="clearfix">
+				<form method="POST" action="kitsend.php" class="clearfix">
 					<label for="phone3">Введите Ваш телефон:</label>
 					<div class="clearfix">
 						<div class="phone-img" style="background-image: url('i/phone.png');"></div>
 						<input type="text" id="phone3" name="phone" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" required/>
 					</div>
-					<button class="b-blue-butt" type="submit">Получить подробную консультацию</button>
+					<input type="hidden" name="subject" value="Подробная консультация">
+					<button class="ajax b-blue-butt" type="submit">Получить подробную консультацию</button>
 					<p>Перезвоним в течение 5 минут</p>
 				</form>
 				</div>
@@ -345,7 +348,7 @@
 					</li>
 					<li>
 						<img src="i/b_7/3.png">
-						<span>Это уникальная услуга. Роддома не могут<br> выделить врачей для круглосуточной под-<br>держки будущих мам;</span>
+						<span>Это уникальная услуга. Роддом<h5 style="display:inline-block; font-family: 'RR'; font-size: 18px;" class="ud">а</h5> не могут<br> выделить врачей для круглосуточной под-<br>держки будущих мам;</span>
 					</li>
 				</ul>
 			</div>
@@ -353,7 +356,7 @@
 	</div>
 	<div class="b b-7">
 		<div class="b-block">
-			<a href="#">Закажите звонок с пульта прямо сейчас</a>
+			<a href="#" class="fancy" data-block="#callback">Закажите звонок с пульта прямо сейчас</a>
 			<h2><b>Мы перезвоним Вам</b> в течение 5 минут<br>
 			и расскажем об услуге по телефону</h2>
 		</div>
@@ -378,7 +381,7 @@
 				<h2>Оставьте заявку</h2>
 				<h3>на бесплатную консультацию<br>эксперта по родам	</h3>
 				<p>Он перезвонит Вам в течение 5 минут</p>
-				<form>
+				<form method="POST" action="kitsend.php" class="clearfix">
 					<label for="name">Введите Ваше имя:</label>
 					<div class="clearfix">
 						<div class="phone-img" style="background-image: url('i/man.png');"></div>
@@ -389,7 +392,8 @@
 						<div class="phone-img" style="background-image: url('i/phone.png');"></div>
 						<input type="text" id="phone4" name="phone" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" required/>
 					</div>
-					<button class="b-blue-butt" type="submit">Получить бесплатную консультацию</button>
+					<input type="hidden" name="subject" value="Консультация">
+					<button class="ajax b-blue-butt" type="submit">Получить бесплатную консультацию</button>
 				</form>
 				<span>Сегодня уже проконсультировали<b>55</b> человек</span>
 				</div>
@@ -401,131 +405,135 @@
 			<h2><b>Всё включено:</b><br>неповторимый уровень сервиса</h2>
 			<p>Мы делаем всё, чтобы роды были легкими для Вас и Вашего ребенка</p>
 			<div class="b-b">
-				<a class=" b-red-butt" href="#">Кратко</a>
-				<a class="b-red-butt active" href="#">Подробно</a>
+				<a id="preview" class="b-red-butt active" href="#">Кратко</a>
+				<a class="b-red-butt" id="full" href="#">Подробно</a>
 			</div>
-			<ul class="first clearfix">
-				<p class="top">01</p>
-				<p class="text">Дородовая подготовка</p>
-				<p class="describe">Анализы, осмотр, лечение осложнений<br>- бесплатно</p>
-				<li>
-					<img src="i/check-2.png">
-					<span>Регулярное наблюдение у гинеколога со стажем от 10 лет;</span>
-				</li>
-				<li>
-					<img src="i/check-2.png">
-					<span>Плановые анализы;</span>
-				</li>
-				<li>
-					<img src="i/check-2.png">
-					<span>Лечение текущих осложнений (токсикоз, повышенный тонус<br> матки и пр.);</span>
-				</li>
-				<li>
-					<img src="i/check-2.png">
-					<span>Психологические консультации;</span>
-				</li>
-				<li>
-					<img src="i/check-2.png">
-					<span>Подбор роддома с учетом Ваших медицинских показаний и по-<br>желаний;</span>
-				</li>
-				<li>
-					<img src="i/check-2.png">
-					<span>За 10 дней до родов организуем экскурсию в роддом и знако-<br>мим с Вашим врачом и бригадой акушеров.</span>
-				</li>
-			</ul>
-				<ul class="first right clearfix">
-				<p class="top">02</p>
-				<p class="text">Консультации 24 часа в сутки</p>
-				<p class="describe">По любому вопросу Вас проконсультирует высоко-<br>квалифицированный врач</p>
-				<li>
-					<!-- <img src="i/check-2.png"> -->
-					<span class="without">Вы можете круглосуточно звонить на наш пульт по любому во-<br>просу.</span>
-				</li>
-				<li>
-					<!-- <img src="i/check-2.png"> -->
-					<span class="without">24 часа в сутки Вам гарантированы подробные бесплатные<br> консультации:</span>
-				</li>
-				<li>
-					<img src="i/check-2.png">
-					<span>акушера-гинеколога; </span>
-				</li>
-				<li>
-					<img src="i/check-2.png">
-					<span>психолога;</span>
-				</li>
-				<li>
-					<img src="i/check-2.png">
-					<span>педиатра;</span>
-				</li>
-				<li>
-					<img src="i/check-2.png">
-					<span>врачей других специализаций.</span>
-				</li>
-			</ul>
-				<ul class="first second clearfix">
-				<p class="top">03</p>
-				<p class="text">Комфортные роды</p>
-				<p class="describe">Постоянная забота о Вас<br>
-				и максимум безопасности</p>
-				<li>
-					<img src="i/check-2.png">
-					<span>Как только возникают признаки приближающихся родов Вы<br> звоните нам;</span>
-				</li>
-				<li>
-					<img src="i/check-2.png">
-					<span>Мы организуем выезд специализированной коммерческой<br> скорой; </span>
-				</li>
-				<li>
-					<img src="i/check-2.png">
-					<span>Обеспечиваем благополучные роды (по желанию с терапией<br> обезболивания). Вас обслуживают акушеры-гинекологи со<br> стажем от 10 лет  </span>
-				</li>
-				<li>
-					<img src="i/check-2.png">
-					<span>После родов Вас переводят в палату и приносят ребенка уже<br> через несколько часов;  </span>
-				</li>
-				<li>
-					<img src="i/check-2.png">
-					<span>В течение первых суток каждые 60 минут Вас навещает<br> 
-					Ваш врач;  </span>
-				</li>
-				<li>
-					<img src="i/check-2.png">
-					<span>В течение 3-х суток ребенок находится под постоянным врачеб-<br>ным наблюдением;  </span>
-				</li>
-				<li>
-					<img src="i/check-2.png">
-					<span>Выписка спустя 3 дня.</span>
-				</li>
-			</ul>
-				<ul class="first second right clearfix">
-				<p class="top">04</p>
-				<p class="text">Послеродовая поддержка</p>
-				<p class="describe">1 месяц бесплатного наблюдения<br>педиатра</p>
-				<li>
-					<!-- <img src="i/check-2.png"> -->
-					<span>В первый, очень важный месяц жизни, Вашего малыша бес-<br>платно наблюдает наш врач-педиатр.  </span>
-				</li>
-				<li>
-					<!-- <img src="i/check-2.png"> -->
-					<span>В наблюдение входит:  </span>
-				</li>
-				<li>
-					<img src="i/check-2.png">
-					<span>регулярная проверка здоровья ребенка;  </span>
-				</li>
-				<li>
-					<img src="i/check-2.png">
-					<span>все необходимые процедуры; </span>
-				</li>
-				<li>
-					<img src="i/check-2.png">
-					<span>круглосуточные консультации с педиатром и другими врачами<br> по телефону;  </span>
-				</li>
-				<li>
-					<img src="i/check-2.png">
-					<span>оказание медицинской помощи, если ребенок заболел. </span>
-				</li>
-			</ul>
+			<div class="b-table">
+				<ul>
+					<li class="top">01</li>
+					<li class="text">Дородовая подготовка</li>
+					<li class="describe">Анализы, осмотр, лечение осложнений<br>- бесплатно</li>
+					<li>
+						<img src="i/check-2.png">
+						<span>Регулярное наблюдение у гинеколога со стажем от 10 лет;</span>
+					</li>
+					<li>
+						<img src="i/check-2.png">
+						<span>Плановые анализы;</span>
+					</li>
+					<li>
+						<img src="i/check-2.png">
+						<span>Лечение текущих осложнений (токсикоз, повышенный тонус<br> матки и пр.);</span>
+					</li>
+					<li>
+						<img src="i/check-2.png">
+						<span>Психологические консультации;</span>
+					</li>
+					<li>
+						<img src="i/check-2.png">
+						<span>Подбор роддома с учетом Ваших медицинских показаний и по-<br>желаний;</span>
+					</li>
+					<li>
+						<img src="i/check-2.png">
+						<span>За 10 дней до родов организуем экскурсию в роддом и знако-<br>мим с Вашим врачом и бригадой акушеров.</span>
+					</li>
+				</ul>
+					<ul>
+					<li class="top">02</li>
+					<li class="text">Консультации 24 часа в сутки</li>
+					<li class="describe">По любому вопросу Вас проконсультирует высоко-<br>квалифицированный врач</li>
+					<li>
+						<!-- <img src="i/check-2.png"> -->
+						<span class="without">Вы можете круглосуточно звонить на наш пульт по любому во-<br>просу.</span>
+					</li>
+					<li>
+						<!-- <img src="i/check-2.png"> -->
+						<span class="without">24 часа в сутки Вам гарантированы подробные бесплатные<br> консультации:</span>
+					</li>
+					<li>
+						<img src="i/check-2.png">
+						<span>акушера-гинеколога; </span>
+					</li>
+					<li>
+						<img src="i/check-2.png">
+						<span>психолога;</span>
+					</li>
+					<li>
+						<img src="i/check-2.png">
+						<span>педиатра;</span>
+					</li>
+					<li>
+						<img src="i/check-2.png">
+						<span>врачей других специализаций.</span>
+					</li>
+				</ul>
+				</div>
+				<div class="b-table">
+					<ul>
+					<li class="top">03</li>
+					<li class="text">Комфортные роды</li>
+					<li class="describe">Постоянная забота о Вас<br>
+					и максимум безопасности</li>
+					<li>
+						<img src="i/check-2.png">
+						<span>Как только возникают признаки приближающихся родов Вы<br> звоните нам;</span>
+					</li>
+					<li>
+						<img src="i/check-2.png">
+						<span>Мы организуем выезд специализированной коммерческой<br> скорой; </span>
+					</li>
+					<li>
+						<img src="i/check-2.png">
+						<span>Обеспечиваем благополучные роды (по желанию с терапией<br> обезболивания). Вас обслуживают акушеры-гинекологи со<br> стажем от 10 лет  </span>
+					</li>
+					<li>
+						<img src="i/check-2.png">
+						<span>После родов Вас переводят в палату и приносят ребенка уже<br> через несколько часов;  </span>
+					</li>
+					<li>
+						<img src="i/check-2.png">
+						<span>В течение первых суток каждые 60 минут Вас навещает<br> 
+						Ваш врач;  </span>
+					</li>
+					<li>
+						<img src="i/check-2.png">
+						<span>В течение 3-х суток ребенок находится под постоянным врачеб-<br>ным наблюдением;  </span>
+					</li>
+					<li>
+						<img src="i/check-2.png">
+						<span>Выписка спустя 3 дня.</span>
+					</li>
+				</ul>
+					<ul>
+					<li class="top">04</li>
+					<li class="text">Послеродовая поддержка</li>
+					<li class="describe">1 месяц бесплатного наблюдения<br>педиатра</li>
+					<li>
+						<!-- <img src="i/check-2.png"> -->
+						<span>В первый, очень важный месяц жизни, Вашего малыша бес-<br>платно наблюдает наш врач-педиатр.  </span>
+					</li>
+					<li>
+						<!-- <img src="i/check-2.png"> -->
+						<span>В наблюдение входит:  </span>
+					</li>
+					<li>
+						<img src="i/check-2.png">
+						<span>регулярная проверка здоровья ребенка;  </span>
+					</li>
+					<li>
+						<img src="i/check-2.png">
+						<span>все необходимые процедуры; </span>
+					</li>
+					<li>
+						<img src="i/check-2.png">
+						<span>круглосуточные консультации с педиатром и другими врачами<br> по телефону;  </span>
+					</li>
+					<li>
+						<img src="i/check-2.png">
+						<span>оказание медицинской помощи, если ребенок заболел. </span>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	<div class="b b-10">
@@ -588,7 +596,7 @@
 			<img src="i/arrow-2.png">
 			<h4><b>Стоимость полиса</b> страхования родов<br>от 49 тысяч рублей</h4>
 			<h5>В цену включены роды, услуги по наблюдению за беременностью<br>и послеродовая поддержка</h5>
-			<a class="b-blue-butt" href="#">Получить консультацию по родам</a>
+			<a data-block="#consult" class="b-blue-butt fancy" href="#">Получить консультацию по родам</a>
 		</div>
 	</div>
 	<div class="b b-12">
@@ -615,7 +623,7 @@
 				<img src="i/doc-2.png">
 				<b>Сергей Валерьевич Марачев</b>
 				<p>Врач-эксперт высшей категории,<br>ведущий специалист медицинского пульта</p>
-				<a class="b-blue-butt" href="#">Задать вопрос Сергею Валерьевичу прямо сейчас</a>
+				<a class="fancy b-blue-butt" data-block="#question" href="#">Задать вопрос Сергею Валерьевичу прямо сейчас</a>
 			</div>
 			<div class="right clearfix">
 				<h4>О VIP-палатах в роддомах</h4>
@@ -677,11 +685,11 @@
 					<a class="b-red-butt" href="#">Читать подробнее</a>
 				</div>
 			</div>
-			<ul class="clearfix">
+			<!-- <ul class="clearfix">
 				<li><a href="#"></a></li>
 				<li><a href="#"></a></li>
 				<li><a href="#"></a></li>
-			</ul>
+			</ul> -->
 		</div>
 	</div>
 	<div class="b b-15">
@@ -696,13 +704,14 @@
 			<div class="right yellow-border">
 				<div>
 				<h2>Получите промокод<br>на подарок прямо сейчас</h2>
-				<form class="clearfix">
+				<form method="POST" action="kitsend.php" class="clearfix">
 					<label for="phone5">Введите Ваш телефон:</label>
 					<div class="clearfix">
 						<div class="phone-img" style="background-image: url('i/phone.png');"></div>
 						<input type="text" id="phone5" name="phone" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" required/>
 					</div>
-					<button class="b-blue-butt" href="#">Получить промокод</button>
+					<input type="hidden" name="subject" value="Промокод">
+					<button class="ajax b-blue-butt" type="submit">Получить промокод</button>
 				</form>
 				<p>Промокод придет на введенный номер<br>в виде SMS в течение 5 минут</p>
 				</div>
@@ -720,7 +729,7 @@
 				<div class="right">
 					<p>Есть вопрос? Звоните - поможем!</p>
 					<h2>+7(499) 399-35-09</h2>
-					<a href="#">Заказать звонок</a>
+					<a href="#" class="fancy" data-block="#callback">Заказать звонок</a>
 				</div>
 			</div>
 			<!-- <div class="left clearfix">
@@ -736,22 +745,98 @@
 	</div>
 	
 <div style="display:none;">
-	<div id="b-popup-1">
-			<div class="for_all b-popup" >
-				<h3>Оставьте заявку</h3>
-				<h4>и наши специалисты<br>свяжутся с Вами в ближайшее время</h4>
-				<form action="kitsend.php" method="POST" id="b-form-1" data-block="#b-popup-1">
-					<div class="b-popup-form">
-						<label for="name">Введите Ваше имя</label>
-						<input type="text" id="name" name="name" required/>
-						<label for="tel">Введите Ваш номер телефона</label>
-						<input type="text" id="tel" name="phone" required/>
-						<input type="hidden" name="subject" value="Заказ"/>
-						<input type="submit" class="ajax b-orange-butt" value="Заказать">
-					</div>
-				</form>
+	<div id="callback" class="popup">
+		<div class="form yellow-border">
+			<div>
+			<h2>Заказать<br>обратный звонок</h2>
+			<p>Напишите свои контакты, и мы<br>перезвоним Вам через 5 минут</p>
+			<form method="POST" action="kitsend.php" class="clearfix">
+				<label for="name1">Введите Ваше имя:</label>
+				<div class="clearfix">
+					<div class="phone-img" style="background-image: url('i/man.png');"></div>
+					<input type="text" id="name1" name="name" placeholder="Иван Иванов" required/>
+				</div>
+				<label for="phone6">Введите Ваш телефон, и мы перезвоним:</label>
+				<div class="clearfix">
+					<div class="phone-img" style="background-image: url('i/phone.png');"></div>
+					<input type="text" id="phone6" name="phone" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" required/>
+				</div>
+				<input type="hidden" name="subject" value="Обратный звонок">
+				<button class="ajax b-blue-butt" type="submit">Заказать звонок</button>
+			</form>
+			<b>или позвоните нам по телефону<br><span>+7 (495) 542-60-01</span></b>
 			</div>
 		</div>
+	</div>
+	<div id="consult" class="popup">
+		<div class="form yellow-border">
+			<div>
+			<h2>Получите консультацию<br>по родам - бесплатно</h2>
+			<p>Напишите свои контакты, и мы<br>перезвоним Вам через 5 минут</p>
+			<form method="POST" action="kitsend.php" class="clearfix">
+				<label for="name2">Введите Ваше имя:</label>
+				<div class="clearfix">
+					<div class="phone-img" style="background-image: url('i/man.png');"></div>
+					<input type="text" id="name2" name="name" placeholder="Иван Иванов" required/>
+				</div>
+				<label for="phone7">Введите Ваш телефон, и мы перезвоним:</label>
+				<div class="clearfix">
+					<div class="phone-img" style="background-image: url('i/phone.png');"></div>
+					<input type="text" id="phone7" name="phone" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" required/>
+				</div>
+				<input type="hidden" name="subject" value="Консультация">
+				<button class="ajax b-blue-butt" type="submit">Заказать звонок</button>
+			</form>
+			<b>или позвоните нам по телефону<br><span>+7 (495) 542-60-01</span></b>
+			</div>
+		</div>
+	</div>
+	<div id="expert" class="popup">
+		<div class="form yellow-border">
+			<div>
+			<h2>Задайте вопрос<br>эксперту по родам</h2>
+			<p>и мы с удовольствием ответим Вам<br>в течение 15 минут</p>
+			<form method="POST" action="kitsend.php" class="clearfix">
+				<label for="question1">Напишите свой вопрос:</label>
+				<textarea id="question1" name="question"></textarea>
+				<label for="phone8">Введите Ваш телефон, и мы перезвоним:</label>
+				<div class="clearfix">
+					<div class="phone-img" style="background-image: url('i/phone.png');"></div>
+					<input type="text" id="phone8" name="phone" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" required/>
+				</div>
+				<input type="hidden" name="subject" value="Вопрос эксперту">
+				<button class="ajax b-blue-butt" type="submit">Задать вопрос</button>
+			</form>
+			<b>или позвоните нам по телефону<br><span>+7 (495) 542-60-01</span></b>
+			</div>
+		</div>
+	</div>
+	<div id="question" class="popup">
+		<div class="form yellow-border ">
+			<div class="clearfix">
+				<div class="left">
+					<img src="i/doc-3.jpg">
+					<b>Сергей Валерьевич Марачев</b>
+					<p>Врач-эксперт высшей категории,<br>ведущий специалист медицинского пульта</p>
+				</div>
+				<div class="question-right">
+					<h2>Задайте вопрос<br>Сергею Валерьевичу</h2>
+					<p>и мы с удовольствием ответим Вам<br>в течение 15 минут</p>
+					<form method="POST" action="kitsend.php" class="clearfix">
+						<label for="phone9">Введите Ваш телефон, и мы перезвоним:</label>
+						<div class="clearfix">
+							<div class="phone-img" style="background-image: url('i/phone.png');"></div>
+							<input type="text" id="phone9" name="phone" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" required/>
+						</div>
+						<label for="question2">Напишите свой вопрос:</label>
+						<textarea id="question2" name="question" required></textarea>
+						<input type="hidden" name="subject" value="Вопрос Cергею Валерьевичу">
+						<button class="ajax b-blue-butt" type="submit">Задать вопрос</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 		<div id="b-popup-2">
 			<div class="b-thanks b-popup">
 				<h3>Спасибо!</h3>
