@@ -1168,6 +1168,7 @@ p.left-text {}
 				}
 					.b-5 table tr td ul li span b{
 						font-weight: 500;
+						cursor: help;
 						border-bottom: 2px dashed #2579bf;
 					}
 			.b-5 table tr:nth-child(2) td p{
@@ -2453,4 +2454,14 @@ p {}
 }
 #b-popup-error {
 	width: 388px;
+}
+.qtip{
+	width: 300px !important;
+	top: auto !important;
+	bottom: 20px;
+	padding: 10px;
+}
+.qtip-content{
+	font-size: 14px;
+	line-height: 16px;
 }

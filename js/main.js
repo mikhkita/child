@@ -73,5 +73,23 @@ $(document).ready(function(){
 	  		return false;
   	});
    
+   	$(".b-qtip").qtip({
+   		// style:{
+   		// 	tip:{
+   		// 		width: 300
+   		// 	}
+   		// },
+        position: {
+            my: 'bottom center',
+            at: 'top center',
+            container: $('.b-qtip')
+        },
+        style: {
+            classes: 'qtip-light qtip-shadow qtip-rounded'
+        },
+        show: {
+            delay: 0
+        }
+    });
 
 });
