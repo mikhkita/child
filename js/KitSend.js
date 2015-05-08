@@ -25,7 +25,7 @@ $(document).ready(function(){
 			}
 		});
 		if( $(this).find("input[name=phone]").length ){
-			$(this).find("input[name=phone]").mask(tePhone,{placeholder:" "});
+			$(this).find("input[name=phone]").mask(tePhone,{placeholder:"_"});
 		}
 	});
 
@@ -92,27 +92,7 @@ $(document).ready(function(){
 	$(".fancy-img").fancybox({
 		padding : 0
 	});
-	$("input").focus(function(){
-		$(this).parent().removeClass("error");
-		$(this).removeClass("error");
-		$(this).css("border-right","1px solid #FFDC49");  
-		$(this).parent().css("border","1px solid #FFDC49");
-		// #feeca1
-	});
 	
-	$("input").focusout(function(){
-		$(this).css("border-right","1px solid #CDCDCD");  
-		$(this).parent().css("border","1px solid #CDCDCD");
-		// #feeca1
-	});
-	$("textarea").focus(function() {
-		$(this).removeClass("error");
-		$(this).css("border","1px solid #FFDC49"); 
-	});
-	$("textarea").focusout(function(){
-		$(this).css("border","1px solid #CDCDCD");  
-		// #feeca1
-	});
 	$(".ajax").parents("form").submit(function(){
 		$("input.success").parent().removeClass("error");
 		$("input.error").parent().addClass("error");
@@ -130,7 +110,7 @@ $(document).ready(function(){
 			  	data:  $this.serialize(),
 				success: function(msg){
 					if( msg == "1" ){
-						window.location.assign("http://child:88/thanks.html");
+						window.location.assign("/land/child/thanks.html");
 					}else{
 						$form = $("#b-popup-error");
 					}
@@ -149,40 +129,5 @@ $(document).ready(function(){
   		}
   		return false;
   	});
-
-	$(".b-9 ul").each(function(){
-  		for (var i = 3; i < $(this).find("li").length; i++) {
-  			$(this).find("li").eq(i).hide();
-		};
-	});
-
-  	$("#full").click(function(){
-  		if( !$(this).hasClass("active") ){
-  			$(this).addClass("active");
-	  		$("#preview").removeClass("active");
-	  		$(".b-9 ul").each(function(){
-		  		for (var i = 3; i < $(this).find("li").length; i++) {
-		  			$(this).find("li").eq(i).slideDown();
-		  		};
-	  		});
-	  		
-  		}
-  		return false;
-  	});
-
-  	$("#preview").click(function(){
-  		if( !$(this).hasClass("active") ){
-  			$(this).addClass("active");
-	  		$("#full").removeClass("active");
-	  		$(".b-9 ul").each(function(){
-		  		for (var i = 3; i < $(this).find("li").length; i++) {
-		  			$(this).find("li").eq(i).slideUp();
-		  		};
-	  		});
-	  		$(this).css("height","auto");
-  		}
-  		return false;
-  	});
-
 
 });
