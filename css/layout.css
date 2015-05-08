@@ -1544,7 +1544,7 @@ p {}
 .b-9{
 	background-image: url("../i/back-8.jpg");
 	background-position: 50% 0%;
-	background-size: 100%;
+	/*background-size: 100%;*/
 	overflow: hidden;
 }
 	.b-9 .b-block{
