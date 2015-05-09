@@ -200,7 +200,7 @@ input:-moz-placeholder {
 			margin-top: 30px;
 		}
 			.b-2 .b-block .b-bottom .left{
-				background-image: url("../i/doc-3.png");
+				background-image: url("../i/thanks.jpg");
 				background-position: 50% 50%;
 				width: 152px;
 				height: 152px;
@@ -208,6 +208,7 @@ input:-moz-placeholder {
 				margin-right: 17px;
 				margin-top: 2px;
 				margin-left: -7px;
+				border-radius: 76px;
 			}
 			.b-2 .b-block .b-bottom p{
 				color: #000;
