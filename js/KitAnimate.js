@@ -1,15 +1,15 @@
 $(document).ready(function(){	
 	var custom = [];
 
-	if( device.mobile() || device.tablet() ){
-		$(".anim").each(function(){
-			var $this = $(this);
-				if( $this.attr("data-func") ){
-					custom[$this.attr("data-func")]($this);
-				}
-				$this.removeClass($this.attr("data-anim")).addClass($this.attr("data-anim")+"-show");
-		});
-	}else{
+	// if( device.mobile() || device.tablet() ){
+	// 	$(".anim").each(function(){
+	// 		var $this = $(this);
+	// 			if( $this.attr("data-func") ){
+	// 				custom[$this.attr("data-func")]($this);
+	// 			}
+	// 			$this.removeClass($this.attr("data-anim")).addClass($this.attr("data-anim")+"-show");
+	// 	});
+	// }else{
 		var myWidth, myHeight;
 
 		function whenScroll(){
@@ -44,7 +44,7 @@ $(document).ready(function(){
 	  	resize();
 	  	$(window).scroll(whenScroll);
 		whenScroll();
-	}
+	// }
 
 	// Кастомные функции
 	custom['upPercent'] = function(el){

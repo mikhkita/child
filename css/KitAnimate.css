@@ -85,32 +85,128 @@
 	    opacity: 1;
 	}
 
-
 /*Кастомные анимации*/
-.procAnim-1 .b-proc-high,
-.procAnim-2 .b-proc-high,
-.procAnim-3 .b-proc-high{
-	-webkit-transition: all 1000ms linear;
-	   -moz-transition: all 1000ms linear;
-	    -ms-transition: all 1000ms linear;
-	   	 -o-transition: all 1000ms linear;
-			transition: all 1000ms linear;
+@-webkit-keyframes fallTop {
+  	0% {
+  		opacity: 0;
+    	-webkit-transform: translateY(-200px);
+		   -moz-transform: translateY(-200px);
+		    -ms-transform: translateY(-200px);
+		   	 -o-transform: translateY(-200px);
+				transform: translateY(-200px);
+  	}
+
+  	30% {
+  		opacity: 1;
+  	}
+
+ 	100% {
+    	-webkit-transform: translateY(0px);
+		   -moz-transform: translateY(0px);
+		    -ms-transform: translateY(0px);
+		   	 -o-transform: translateY(0px);
+				transform: translateY(0px);
+		opacity: 1;
+  	}
 }
-.procAnim-1 .b-proc-high{
-	height: 0px;
+
+@keyframes fallTop {
+	0% {
+		opacity: 0;
+    	-webkit-transform: translateY(-200px);
+		   -moz-transform: translateY(-200px);
+		    -ms-transform: translateY(-200px);
+		   	 -o-transform: translateY(-200px);
+				transform: translateY(-200px);
+  	}
+
+  	30% {
+  		opacity: 1;
+  	}
+
+ 	100% {
+    	-webkit-transform: translateY(0px);
+		   -moz-transform: translateY(0px);
+		    -ms-transform: translateY(0px);
+		   	 -o-transform: translateY(0px);
+				transform: translateY(0px);
+		opacity: 1;
+  	}
 }
-	.procAnim-1-show .b-proc-high{
-		height: 80px;
+.fallTop,
+.verDown,
+.verUp{
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-duration: 0.3s;
+  	animation-duration: 0.3s;
+  	-webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+.fallTop{
+	-webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+	opacity: 0;
+}
+	.fallTop-show{
+		-webkit-animation-name: fallTop;
+  		animation-name: fallTop;
 	}
-.procAnim-2 .b-proc-high{
-	height: 0px;
+
+@-webkit-keyframes verDown {
+  	0% {
+    	height: 97px;
+  	}
+
+ 	100% {
+    	height: 35px;
+  	}
 }
-	.procAnim-2-show .b-proc-high{
-		height: 120px;
+
+@keyframes verDown {
+	0% {
+    	height: 97px;
+  	}
+
+ 	100% {
+    	height: 35px;
+  	}
+}
+.verDown{
+	-webkit-animation-duration: 0.8s;
+  	animation-duration: 0.8s;
+	height: 97px;
+}
+	.verDown-show{
+		-webkit-animation-name: verDown;
+  		animation-name: verDown;
 	}
-.procAnim-3 .b-proc-high{
-	height: 0px;
+
+@-webkit-keyframes verUp {
+  	0% {
+    	height: 35px;
+  	}
+
+ 	100% {
+    	height: 97px;
+  	}
 }
-	.procAnim-3-show .b-proc-high{
-		height: 210px;
+
+@keyframes verUp {
+	0% {
+    	height: 35px;
+  	}
+
+ 	100% {
+    	height: 97px;
+  	}
+}
+.verUp{
+	-webkit-animation-duration: 0.8s;
+  	animation-duration: 0.8s;
+	height: 35px;
+}
+	.verUp-show{
+		-webkit-animation-name: verUp;
+  		animation-name: verUp;
 	}
