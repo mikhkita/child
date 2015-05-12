@@ -1912,9 +1912,9 @@ p {}
 				font-size: 20px;
 				color: #000;	
 				text-align: justify;
-			
 				line-height: 1.2;
 				padding-right: 16px;
+				letter-spacing: -0.5px;
 }
 				.b-12 .b-block .form .top b{
 					color: #257DBA;
@@ -2296,7 +2296,7 @@ p {}
 					}
 			.b-15 .right p{
 				color: #000;
-				font-family: "RB";
+				font-family: "RR";
 				font-size: 14px;
 				line-height: 20px;
 				margin-top: 8px;
