@@ -693,7 +693,7 @@ form>div{
 				font-weight: 400;
 				line-height: 20px;
 				margin-bottom: 27px;
-				width: 322px;
+				/*width: 322px;*/
 				display: inline-block;
 			}
 			.b-3 .form form{
@@ -1827,15 +1827,16 @@ p {}
 					font-family: "RB";
 					font-weight: 500;
 				}
-				.b-11 .right p a{
+				.b-11 .right p span{
 					color: #E51233;
 					font-family: "RLI";
 					font-size: 14px;
 					text-decoration: underline;
+					cursor: help;
 				}
-				.b-11 .right p a:hover {
+				/*.b-11 .right p a:hover {
 					text-decoration: none;
-				}
+				}*/
 		.b-11 .b-block > img{
 			margin-left: -171px;
 			margin-top: 65px;
@@ -1869,9 +1870,10 @@ p {}
 		}
 .b-12{
 	background-image: url("../i/back-11.jpg");
-	background-size: cover;
-	background-position: 50% 50%;
+	/*background-size: cover;*/
+	background-position: 50% 0%;
 	overflow: hidden;
+	padding-bottom: 41px;
 }
 	.b-12 .b-block{
 		text-align: center;
@@ -1939,22 +1941,21 @@ p {}
 				padding: 4.5px 25px;
 				font-size: 16px;
 			}
-		.b-12 .b-block .right h4{
+		.b-12 .b-block .right #online-kons h4{
 			color: #FFF;
 			font-family: "RB";
 			font-size: 20px;
-			float: left;
-			margin-top: 21px;
 			margin-left: 37px;
+			text-align: left;
+			margin-top: 21px;
 		}
-		.b-12 .b-block .right > p{
+		.b-12 .b-block .right #online-kons p{
 			font-size: 16px;
 			font-family: "RR";
 			color: #f3f4f7;
-			margin-top: 58px;
+			margin-top: 9px;
 			text-align: justify;
 			width: 450px;
-			/* margin-bottom: 40px; */
 			margin-left: 37px;
 		
 			line-height: 1.2;
@@ -2035,8 +2036,8 @@ p {}
 				color: #000;
 				font-family: "RR";
 				font-size: 16px;
-				text-align: left;
-			
+				/*text-align: left;*/
+				text-align: justify;			
 				line-height: 1.2;
 				margin-bottom: 5px;
 }
@@ -2046,9 +2047,9 @@ p {}
 				font-size: 14px;
 				border-radius: 5px;
 				border: 3px solid #E51233;
-				float: left;
 				width: 67px;
 				padding: 4px 21px;
+				display: block;
 			}
 .b-14{
 	background-image: url("../i/back-13.jpg");
