@@ -226,7 +226,6 @@ button {
 		color: white !important;
 	}
 	.b-red-butt.active {
-		cursor: default;
 		background-color: #c40f2c !important;
 		border: 3px solid #c40f2c !important;
 		color: white !important;
@@ -1541,6 +1540,7 @@ p {}
 			font-size: 20px;
 			font-weight: 300;
 			padding: 2px 6px;
+			margin-left: 2px;
 		}
 .b-9{
 	background-image: url("../i/back-8.jpg");
@@ -1659,7 +1659,10 @@ p {}
 				}
 				.b-b{
 					margin-bottom: 13px;
-}
+				}
+				.b-b a.active {
+					cursor: default;
+				}
 .b-10{
 	background: rgb(255,255,255); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%); /* FF3.6+ */
@@ -1915,7 +1918,7 @@ p {}
 				color: #000;	
 				text-align: justify;
 				line-height: 1.2;
-				padding-right: 16px;
+				/*padding-right: 16px;*/
 				letter-spacing: -0.5px;
 }
 				.b-12 .b-block .form .top b{
@@ -1969,7 +1972,7 @@ p {}
 }
 	.b-13 .b-block{
 		text-align: center;
-		padding-bottom: 63px;
+		padding-bottom: 45px;
 	
 		width: 1055px;
 }
@@ -2019,38 +2022,41 @@ p {}
 				padding: 14px 23px;
 			}
 		.b-13 .right{
-			margin-top: 2px;
+			margin-top: 55px;
 			margin-right: 39px;
 			width: 420px;
 		}
-			.b-13 .right h4{
-				color: #1B4F73;
-				font-family: "RR";
-				font-size: 24px;
-				font-weight: 400;
-				text-align: left;
-				margin-top: 53px;
+			.b-13 .right .q-wrap {
+				margin-bottom: 20px;
 			}
-			.b-13 .right p{
-				margin-top: 17px;
-				color: #000;
-				font-family: "RR";
-				font-size: 16px;
-				/*text-align: left;*/
-				text-align: justify;			
-				line-height: 1.2;
-				margin-bottom: 5px;
-}
-			.b-13 .right a{
-				color: #E51233;
-				font-family: "RMI";
-				font-size: 14px;
-				border-radius: 5px;
-				border: 3px solid #E51233;
-				width: 67px;
-				padding: 4px 21px;
-				display: block;
-			}
+				.b-13 .right h4{
+					color: #1B4F73;
+					font-family: "RR";
+					font-size: 24px;
+					font-weight: 400;
+					text-align: left;
+					/*margin-top: 53px;*/
+				}
+				.b-13 .right p{
+					margin-top: 17px;
+					color: #000;
+					font-family: "RR";
+					font-size: 16px;
+					/*text-align: left;*/
+					text-align: justify;			
+					line-height: 1.2;
+					margin-bottom: 4px;
+				}
+				.b-13 .right a{
+					color: #E51233;
+					font-family: "RMI";
+					font-size: 14px;
+					border-radius: 5px;
+					border: 3px solid #E51233;
+					width: 67px;
+					padding: 4px 21px;
+					display: block;
+				}
 .b-14{
 	background-image: url("../i/back-13.jpg");
 	background-position: 50% 50%;

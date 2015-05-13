@@ -62,6 +62,10 @@ $(document).ready(function(){
 	  		$(this).addClass("active");
 	  		var block = $(this).attr("data-show");
 	  		$(block).slideDown();
+  		} else {
+  			$(this).removeClass("active");
+	  		var block = $(this).attr("data-show");
+	  		$(block).slideUp();
   		}
   		return false;
   	});
