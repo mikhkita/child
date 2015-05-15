@@ -11,6 +11,8 @@
 
 	$fields = array();
 
+	$_POST["phone"] = str_replace(" ","", $_POST["phone"]);
+
 	if( count($_POST) ){
 
 		foreach ($deafult  as $key => $value){
