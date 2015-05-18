@@ -313,9 +313,10 @@ form>div{
 			.b-1 .b-block .header .left{
 				margin-top: 15px;
 			}	
-				.b-1 .b-block .header .left img{
-					float: left;
+				.b-1 .b-block .header .left a{
 					margin-right: 10px;
+					display: inline-block;
+					float: left;
 				}
 				.b-1 .b-block .header .left p{
 					color: #000;
@@ -2318,6 +2319,22 @@ p {}
 		font-family: "RR" !important;
 	
 		margin-bottom: 5px;
+}
+.b-16 .raz {
+	color: #000;
+ 	font-family: "RR";
+ 	font-size: 16px;
+ 	font-weight: 500;
+
+ 	text-align: left;
+ 	line-height: 1.25;
+ 	/*margin-top: 20px;*/
+}
+.b-16 .raz span {
+	font-family: "RB";
+}
+.b-16 .raz:hover {
+	text-decoration: underline;
 }
 #callback {
 	width: 388px;
