@@ -110,7 +110,7 @@ $(document).ready(function(){
 			  	data:  $this.serialize(),
 				success: function(msg){
 					if( msg == "1" ){
-						window.location.assign("/land/child/thanks.html");
+						window.location.assign("/rody/thanks.html");
 					}else{
 						$form = $("#b-popup-error");
 					}

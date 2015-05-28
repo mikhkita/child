@@ -1,11 +1,10 @@
-<?php
+﻿<?php
 	require_once("phpmail.php");
 
-	// $email_admin = "beatbox787@gmail.com";
 	$email_admin = "fateev@spasskievorota.com,tsikada@yandex.ru";
 
 	$from = "“Спасские ворота”";
-	$email_from = "robot@spasskie-vorota.ru";
+	$email_from = "robot@spasskievorota.com";
 
 	$deafult = array("name"=>"Имя","phone"=>"Телефон", "email"=>"E-mail");
 
