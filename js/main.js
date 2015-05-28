@@ -115,26 +115,31 @@ $(document).ready(function(){
         }
     });
 
-     if( window.location.hash != "" ){
-        $("body, html").animate({
-            scrollTop : $(".b-scroll[data-name="+window.location.hash+"]").offset().top
-        },800);
+    if( window.location.hash != "" ){
+        $("body").scrollTop($(".b-scroll[data-name="+window.location.hash+"]").offset().top);
     }
 
-    function whenScroll(){
-        var scroll = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop,
-              $items = $(".b-scroll");
-            for(var i = $items.length-1; i >= 0; i--){
-                // console.log($items.eq(i).offset().top - 80);
-                if( scroll > $items.eq(i).offset().top -100){
-                    if( $items.eq(i).attr("data-name") != window.location.hash ){
-                        window.location.hash = $items.eq(i).attr("data-name");
-                    }
-                    return true;
+});
+
+function whenScroll(){
+    var scroll = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop,
+          $items = $(".b-scroll");
+        for(var i = $items.length-1; i >= 0; i--){
+            // console.log($items.eq(i).offset().top - 80);
+            if( scroll > $items.eq(i).offset().top -100){
+                if( $items.eq(i).attr("data-name") != window.location.hash ){
+                    window.location.hash = $items.eq(i).attr("data-name");
                 }
+                return true;
             }
+        }
+}
+
+$( window ).load(function() {
+    if( window.location.hash != "" ){
+        $("body").scrollTop($(".b-scroll[data-name="+window.location.hash+"]").offset().top);
     }
+
     $(window).scroll(whenScroll);
     whenScroll();
-
 });
